@@ -1,0 +1,123 @@
+@import url(../reset.css);
+@import url(../base.css);
+@import url(../header.css);
+@import url(../footer.css);
+
+body {
+    background: linear-gradient(66deg, rgba(11, 10, 16, 0.88) -6.21%, rgba(0, 0, 0, 0.00) 64.92%), linear-gradient(0deg, #141416 0%, #141416 100%), #0E0E10;
+}
+
+section:first-of-type {
+    padding: 60px 60px;
+}
+
+.transparent-btn {
+    border: 1px white solid;
+    color: var(--text-color);
+}
+
+.yellow-btn {
+    background-color: var(--yellow);
+    color: var(--black);
+    transition-duration: 1s;
+}
+
+p {
+    font-family: var(--font-f);
+    font-size: 22px;
+}
+.join {
+    display: flex;
+    justify-content: space-between;
+}
+.join h1 {
+    font-family: var(--font-f-h);
+    font-size: 108px;
+    color: var(--yellow);
+}
+.join .left img {
+    margin-top: 280px;
+}
+form {
+    padding: 36px;
+    background-color: #19191C;
+    border-radius: 32px;
+    width: 65%;
+}
+
+form .input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 20px;
+
+}
+
+label {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--font-f);
+    color: #fff;
+}
+
+input {
+    font-size: 16px;
+    font-family: var(--font-f);
+    color: #6B6B6B;
+    background-color: #fff;
+    width: 100%;
+    padding: 18px 32px;
+    border-radius: 4px;
+    border: 0.60px #D5D5D5 solid
+}
+
+form textarea {
+    padding: 20px 32px;
+    height: 187px;
+    justify-content: baseline;
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    resize: none;
+}
+
+.btn-wrapper button {
+    font-family: var(--font-f);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 7px 18px;
+    margin: 32px 1px 16px;
+    border-radius: 12px;
+}
+
+.btn-wrapper button:hover,
+.btn-wrapper button:active {
+    border: 1px solid var(--yellow);
+    margin: 31px 0 15px;
+    color: var(--yellow);
+}
+
+form>button {
+    display: flex;
+    margin: 68px auto 0;
+    color: white;
+    font-size: 18px;
+    font-family: HelveticaNeueCyr;
+    font-weight: 550;
+    padding: 18px 32px;
+    border-radius: 12px;
+    border: 1px white solid;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 45%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}

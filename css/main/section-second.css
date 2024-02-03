@@ -1,0 +1,80 @@
+.second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 14px;
+    padding: 80px 60px;
+}
+
+.second .card {
+    background: linear-gradient(239deg, white 6%, #6B6B6B 100%);
+    padding: 36px;
+    width: 320px;
+    height: 226px;
+    border-radius: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.second .card:last-child {
+    background: transparent;
+    border: 1px #DADADA solid;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+.upper-row {
+    display: flex;
+    justify-content: space-between;
+}
+.second .line {
+    background-color: #262626;
+    height: 2px;
+    width: 12px;
+}
+.second .card:last-child img {
+    width: 34px;
+    height: 44px;
+}
+
+.second .card:last-child p {
+    color: white;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.29px;
+    text-align: center;
+}
+
+.quantity {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second .card h2 {
+    color: #262626;
+    font-size: 64px;
+    font-family: HelveticaNeueCyr;
+    font-weight: 700;
+    letter-spacing: 0.77px;
+}
+
+.second .card h2:not(:first-of-type) {
+    font-size: 32px;
+    font-family: HelveticaNeueCyr;
+    font-weight: 550;
+    letter-spacing: 0.38px;
+}
+
+.second .card .upper-row p {
+    font-size: 22px;
+    
+}
+.second .card p {
+    font-size: 18px;
+    font-family: var(--font-f);
+    letter-spacing: 0.22px;
+}

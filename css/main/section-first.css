@@ -1,0 +1,80 @@
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first h1 {
+    font-family: var(--font-f-h);
+    color: var(--yellow);
+    height: fit-content;
+    font-size: 108px;
+    line-height: 92.88px;
+    width: 470px;
+}
+
+.first p {
+    font-size: 18px;
+    font-family: var(--font-f);
+    color: var(--grey-text);
+    width: 475px;
+    height: fit-content;
+    line-height: 21.60px;
+}
+
+.text-wrapper {
+    display: grid;
+    grid-auto-rows: min-content;
+    margin-top: 145px;
+}
+
+.text-wrapper img {
+    margin-top: 145px;
+}
+
+.zbir-card {
+    background-color: var(--grey);
+    border-radius: 24px;
+    width: 650px;
+    display: grid;
+    grid-auto-rows: min-content;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.zbir-card img {
+    border-radius: 12px;
+    width: 610px;
+    height: 275px;
+    margin: 0 auto 32px;
+}
+
+.zbir-card p {
+    font-size: 24px;
+    line-height: 30px;
+}
+.zbir-card h2 {
+    font-family: var(--font-f);
+    font-size: 112px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 48px 0;
+    color: var(--text-color);
+}
+.zbir-card button {
+    font-family: var(--font-f);
+    padding: 18px 32px;
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 18px;
+    border-radius: 12px;
+    width: 100%;
+}
+.zbir-card a {
+    width: 48%;
+}
+
+.btn-wrapper {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}

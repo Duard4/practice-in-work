@@ -1,0 +1,106 @@
+@import url(../reset.css);
+@import url(../base.css);
+@import url(../header.css);
+@import url(../footer.css);
+
+body {
+    background: linear-gradient(66deg, rgba(11, 10, 16, 0.88) -6.21%, rgba(0, 0, 0, 0.00) 64.92%), linear-gradient(0deg, #141416 0%, #141416 100%), #0E0E10;
+}
+
+section:first-of-type {
+    padding: 60px 60px;
+}
+.transparent-btn {
+    border: 1px white solid;
+    color: var(--text-color);
+}
+.yellow-btn {
+    background-color: var(--yellow);
+    color: var(--black);
+    transition-duration: 1s ;
+}
+p {
+    font-family: var(--font-f);
+    font-size: 22px;
+}
+.pidtrimay h1 {
+    font-family: var(--font-f-h);
+    font-size: 108px;
+    color: var(--yellow);
+}
+.main-frame {
+    margin: 24px 0 222px;
+    padding: 38px;
+    display: grid;
+    gap: 62px;
+    border-radius: 32px;
+    background: #19191C;
+}
+.pidtrimay button {
+    font-family: var(--font-f);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.40px;
+    padding: 32px ;
+    border: 1px solid var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.btn-wrapper {
+    width: 100%;
+}
+.pidtrimay .upper button { 
+    width: 50%;
+    flex: 1 0 0;
+}
+
+.pidtrimay .upper img { 
+    margin-top: 12px;
+    width: 36px;
+    right: -92%;
+    position: relative;
+}
+/* 
+.pidtrimay .upper button:first-of-type:click .upper img{
+    right: 0 ease;
+} */
+.pidtrimay button:hover, .pidtrimay button:active, .pidtrimay button:focus  {
+    background-color: #111113;
+    color: var(--yellow);
+}
+.pidtrimay .btn-wrapper button:first-of-type {
+    border-radius: 24px 0px 0px 24px;
+}
+.pidtrimay .btn-wrapper {
+    display: flex;
+}
+.pidtrimay .btn-wrapper button:last-of-type {
+    border-radius:  0px 24px 24px 0px;
+}
+.pidtrimay .upper p {
+    padding: 12px;
+    width: 100%;
+    background-color: var(--yellow);
+    border-radius: 32px;
+}
+.pidtrimay .bottom .btn-wrapper button {
+    width: 414px;
+}
+.pidtrimay .bottom > p {
+    margin-bottom: 24px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 33px;
+}
+.pidtrimay span {
+    font-weight: 700;
+}
+.pidtrimay .p-list {
+    padding: 32px;
+    display: grid;
+    gap:24px;
+    color: #fff;
+}

@@ -1,0 +1,15 @@
+@import url(reset.css);
+@import url(base.css);
+
+p {
+    font-family: 'Neue Helvetica Cyr', sans-serif;
+    font-weight: 550;
+    font-size: 36px;
+    color: #a10000;
+}
+
+body {
+    background: linear-gradient(0deg, #0E0E10 0%, #0E0E10 100%), 
+    linear-gradient(0deg, #141416 0%, #141416 100%), 
+    linear-gradient(66deg, rgba(10.51, 10.40, 15.80, 0.88) 0%, rgba(0, 0, 0, 0) 100%);
+}

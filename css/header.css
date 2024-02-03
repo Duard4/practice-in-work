@@ -1,0 +1,36 @@
+header {
+    padding: 24px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    width: 30px;
+    height: 55px;
+}
+header a {
+    font-size: 18px;
+	font-family: var(--font-f);
+    color: var(--text-color);
+}
+header .left, header .right {
+    display: flex;
+    align-items: center;
+}
+header .left {
+    gap: 60px;
+}
+header .right {
+    gap: 50px;
+}
+nav {
+    display: flex;
+    gap: 60px;
+}
+header button {
+	font-family: var(--font-f);
+    font-weight: 500;
+    color: var(--black);
+    padding: 16px 32px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+}
