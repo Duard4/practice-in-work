@@ -1,6 +1,25 @@
 .first {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1180px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        .text-wrapper {
+            margin-top: 5rem;
+            justify-items: center;
+            width: 80% !important;
+            h1 {
+                width: 100% !important;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            img {
+                margin: 5rem 0 2rem;
+            }
+        }
+    }
 }
 
 .first h1 {

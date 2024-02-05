@@ -41,6 +41,9 @@ footer .left {
     flex-wrap: wrap;
     gap: 24px;
     width: 428px;
+    a {
+        width: 80%;
+    }
 }
 footer .left, footer .right {
     display: flex;

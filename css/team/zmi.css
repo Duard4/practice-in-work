@@ -36,22 +36,6 @@
     align-self: center;
 }
 
-.zmi button {
-    font-family: var(--font-f);
-    padding: 18px 32px;
-    font-size: 18px;
-    font-weight: 550;
-    line-height: 18px;
-    border-radius: 12px;
-    width: 100%;
-    align-self: center;
-}
-
-.zmi .btn-wrapper {
-    padding: 24px;
-    width: 100%;
-}
-
 .zmi h1 {
     color: var(--yellow);
     font-family: var(--font-f);

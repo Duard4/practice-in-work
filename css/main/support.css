@@ -22,8 +22,6 @@
 
 .container button {
     font-family: var(--font-f);
-    color: var(--black);
-    background-color: var(--yellow);
     padding: 18px 32px;
     font-size: 18px;
     font-weight: 550;
@@ -38,7 +36,7 @@
     bottom: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
 }
 
 .container img {
@@ -62,4 +60,14 @@
 .container {
     position: relative;
     text-align: center;
+    @media (max-width:1150px) {
+        button {
+            bottom: 5% !important;
+        }
+    }
+    @media (max-width:1050px) {
+        button {
+            bottom: 0 !important;
+        }
+    }
 }

@@ -100,7 +100,7 @@ require "blocks/about.php";
         <?php 
             for ($i = 0; $i < 8; $i++){
                 $number = 5163+$i;
-                include "blocks/partner_logo.php";
+                echo "<div class=\"partner-logo\" style=\"background-image: url(../img/main/Rectangle\ " . $number . ".png) ;\"></div>";
             }
         ?>
     </div>

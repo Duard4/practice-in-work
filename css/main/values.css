@@ -1,6 +1,26 @@
 .values {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width:1180px) {
+        grid-template-columns: 1fr;
+        .right {
+            grid-row: 1;
+            align-items: center !important;
+            padding-top: 0 !important;
+            p {
+                text-align: center !important;
+            }
+
+        }
+        .card-wrapper {
+            width: fit-content;
+            margin: 0 auto;
+            .card {
+            max-width: 22rem !important;
+            }
+        }
+    }
 }
 
 .values .card-wrapper {
@@ -39,7 +59,7 @@
 }
 
 .values .right {
-    padding: 63px 68px;
+    padding: 4rem;
     gap: 38px;
     display: inline-flex;
     flex-direction: column;
@@ -54,7 +74,8 @@
     font-weight: 700;
     line-height: 31.46px;
     text-align: end;
-    width: 474px;
+    max-width: 474px;
+
 }
 .values span {
     color: var(--yellow);

@@ -18,13 +18,22 @@ header .left, header .right {
 }
 header .left {
     gap: 60px;
+    @media (max-width: 945px) {
+        gap: 2rem;
+    }
 }
 header .right {
     gap: 50px;
+    @media (max-width: 945px) {
+        gap: 1.7rem;
+    }
 }
 nav {
     display: flex;
     gap: 60px;
+    @media (max-width: 945px) {
+        gap: 2rem;
+    }
 }
 header button {
 	font-family: var(--font-f);
