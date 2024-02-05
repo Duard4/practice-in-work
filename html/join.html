@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/short/join.css">
+    <script  src="../js/join.js"></script>
     <title>Вільні</title>
 </head>
 
@@ -27,30 +28,34 @@
 
     <section class="join">
         <div class="left">
-            <h1>ДОЄДНАТИСЯ 
+            <h1>ДОЄДНАТИСЯ
                 ДО КОМАНДИ</h1>
-            <img src="../img/Vector 96.svg" alt="">    
+            <img src="../img/Vector 96.svg" alt="">
         </div>
-        <form action="">
+        <form action="" method="post" enctype="multipart/form-data">
             <div class="input-grid">
-                <label for="name">Ім'я </label>
+                <label for="name">Ім'я<span>*</span></label>
                 <label for="surname">Прізвище </label>
                 <input type="text" name="name" id="name" value="Олег" required />
                 <input type="text" name="surname" id="surname" value="Вєрбіч" required />
-                <label for="email">Email </label>
-                <label for="number">Номер </label>
+                <label for="email">Email<span>*</span></label>
+                <label for="number">Номер<span>*</span></label>
                 <input type="email" name="email" id="email" value="Reserved@brightweb" required />
                 <input type="text" name="number" id="number" value="+380" required />
                 <label for="position">Бажана посада</label>
                 <label for="age">Ваш вік</label>
                 <input type="text" name="position" id="position" value="СЕО" required />
                 <input type="number" name="age" id="age" value="18" min="18" max="99" required />
+                <label for="position">Додайте коментар<span>*</span></label>
+                <textarea name="com" id="com">Розкажи, що ти вмієш та чим можеш стати корисним у команді :)</textarea>
+                <input type="file" name="file" id ="file" class = "inputfile" data-multiple-caption="{count} файлів обрано" multiple />
+                <label for="file">
+                    <img src="../img/join-add.png" alt="skripka" id="f-i-1">
+                    <p>прикріпити файл</p>
+                    <img src="../img/join-can.png" alt="can" id="f-i-2">
+                </label>
             </div>
-            <div class="btn-wrapper">
-                <button>Додайте коментар</button>
-                <button>Додайте резюме</button>
-            </div>
-            <textarea name="com" id="com" >Опишіть, свої навички та ким ви себе бачити в нашій команді</textarea>
+
             <button>ДОЄДНАТИСЯ</button>
 
         </form>

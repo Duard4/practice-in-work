@@ -1,16 +1,21 @@
 <?php
+$host = 'db-mysql-fra1-31502-do-user-10404517-0.c.db.ondigitalocean.com';
+$username = 'vilni_user';
+$password = 'passw0rd';
+$database = 'vilni';
+$port = "25060";
 
-$username = "vilni_user";
-$password = "p@$" . "$" . "w0rd";
-echo $password;
-$servername = "db-mysql-fra1-31502-do-user-10404517-0.c.db.ondigitalocean.com";
-$port = 25060;
-$database = "vilni";
-$sslmode = "REQUIRED";
+$conn = new mysqli('db-mysql-fra1-31502-do-user-10404517-0.c.db.ondigitalocean.com', $username, $password, $database, $port);
 
-$con = mysqli_connect($servername, $username, $password, $database, $port);
-if (mysqli_connect_errno()) {
-    echo "Failed to connect";
-    exit();
+// Перевірка наявності з'єднання
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-echo "Congratulations";
+
+// Встановлення кодування
+$conn->set_charset("utf8");
+
+echo "Connected successfully";
+
+// Закриття з'єднання
+$conn->close();
