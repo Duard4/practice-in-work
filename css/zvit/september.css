@@ -1,0 +1,27 @@
+
+@import url(common.css);
+
+
+section {
+    row-gap: 4rem;
+    align-items: end;
+}
+
+.text-wrapper p {
+    margin: 1.5rem 0;
+}
+
+.column {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    img {
+        width: 40%;
+    }
+}
+.t-photo {
+    margin: -4rem 0 0;
+}
+

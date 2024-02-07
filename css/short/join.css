@@ -25,25 +25,33 @@ section:first-of-type {
 p {
     font-family: var(--font-f);
     font-size: 22px;
+    color: var(--text-color);
 }
+
 .join {
     display: flex;
     justify-content: space-between;
     gap: 10rem;
 }
+
 .join h1 {
     font-family: var(--font-f-h);
     font-size: 108px;
     color: var(--yellow);
 }
+
 .join .left img {
     margin-top: 280px;
 }
+
 form {
     padding: 36px;
     background-color: #19191C;
     border-radius: 32px;
     width: 100rem;
+    p {
+        font-weight: 700;
+    }
 }
 
 form .input-grid {
@@ -51,8 +59,9 @@ form .input-grid {
     grid-template-columns: 1fr 1fr;
     row-gap: 32px;
     column-gap: 20px;
-    
+
 }
+
 input[type="file"] {
     opacity: 0;
     z-index: -1;
@@ -67,7 +76,7 @@ form label[for="file"] {
     background-color: rgb(52, 52, 52);
     color: #6B6B6B;
     font-family: var(--font-f);
-    max-width:60%;
+    max-width: 60%;
     padding: 0.8rem 0;
     border-radius: 4px;
     overflow: hidden;
@@ -75,19 +84,29 @@ form label[for="file"] {
     align-content: center;
     justify-content: center;
     grid-row: 9;
-    p {font-size: 16px;
+
+    p {
+        font-size: 16px;
         margin: auto;
     }
-    img:last-of-type{
+
+    img:last-of-type {
         display: none;
     }
+
     img {
         margin: auto;
         height: 1.5rem;
     }
 }
+
 form label[for="file"]:hover {
     color: var(--text-color);
+}
+
+.inputfile:focus+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
 }
 
 label {
@@ -95,6 +114,7 @@ label {
     font-weight: 700;
     font-family: var(--font-f);
     color: #fff;
+
     span {
         color: var(--yellow);
     }
@@ -136,6 +156,47 @@ form>button {
     align-items: center;
     justify-self: center;
     width: 45%;
-    
+
 }
 
+.custom-select {
+    min-width: 350px;
+    position: relative;
+}
+
+select {
+    font-family: var(--font-f);
+    appearance: none;
+    -webkit-appearance: none;
+    width: 105%;
+    font-size: 18px;
+    padding: 16px 32px;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 4px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.custom-select::before,
+.custom-select::after {
+    --size: 0.3rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+}
+
+.custom-select::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 40%;
+}
+
+.custom-select::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 55%;
+}

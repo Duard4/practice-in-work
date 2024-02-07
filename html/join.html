@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/short/join.css">
-    <script  src="../js/join.js"></script>
+    <script src="../js/join.js"></script>
     <title>Вільні</title>
 </head>
 
@@ -32,24 +32,41 @@
                 ДО КОМАНДИ</h1>
             <img src="../img/Vector 96.svg" alt="">
         </div>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="" method="post" enctype="multipart/form-data" style="width: 100rem;">
             <div class="input-grid">
                 <label for="name">Ім'я<span>*</span></label>
                 <label for="surname">Прізвище </label>
-                <input type="text" name="name" id="name" value="Олег" required />
-                <input type="text" name="surname" id="surname" value="Вєрбіч" required />
+                <input type="text" name="name" id="name" value="Олег" autocomplete=true required />
+                <input type="text" name="surname" id="surname" value="Вєрбіч" autocomplete=true />
                 <label for="email">Email<span>*</span></label>
                 <label for="number">Номер<span>*</span></label>
-                <input type="email" name="email" id="email" value="Reserved@brightweb" required />
-                <input type="text" name="number" id="number" value="+380" required />
-                <label for="position">Бажана посада</label>
+                <input type="email" name="email" id="email" value="Reserved@brightweb" autocomplete=true required />
+                <input type="text" name="number" id="number" value="+380" autocomplete=true required />
+                <p>Бажана посада</p>
                 <label for="age">Ваш вік</label>
-                <input type="text" name="position" id="position" value="СЕО" required />
+                <div class="custom-select" name="position" id="position" style="width:200px;">
+                    <select>
+                        <option value="0">Вакантні місця:</option>
+                        <option value="1">Audi</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                        <option value="5">Honda</option>
+                        <option value="6">Jaguar</option>
+                        <option value="7">Land Rover</option>
+                        <option value="8">Mercedes</option>
+                        <option value="9">Mini</option>
+                        <option value="10">Nissan</option>
+                        <option value="11">Toyota</option>
+                        <option value="12">Volvo</option>
+                    </select>
+                </div>
                 <input type="number" name="age" id="age" value="18" min="18" max="99" required />
-                <label for="position">Додайте коментар<span>*</span></label>
+                <label for="com">Додайте коментар<span>*</span></label>
                 <textarea name="com" id="com">Розкажи, що ти вмієш та чим можеш стати корисним у команді :)</textarea>
-                <input type="file" name="file" id ="file" class = "inputfile" data-multiple-caption="{count} файлів обрано" multiple />
-                <label for="file">
+                <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} файлів обрано"
+                    multiple />
+                <label for="file" onclick="clear()">
                     <img src="../img/join-add.png" alt="skripka" id="f-i-1">
                     <p>прикріпити файл</p>
                     <img src="../img/join-can.png" alt="can" id="f-i-2">

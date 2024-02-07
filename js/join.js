@@ -1,4 +1,7 @@
-
+function clear() {
+    var inputs = document.querySelectorAll('.inputfile');
+    inputs.value = "";
+}
 
 function ready() {
     const i1 = document.getElementById("f-i-1");

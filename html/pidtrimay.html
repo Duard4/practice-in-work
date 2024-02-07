@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/short/pidtrimay.css">
+    <script  src="../js/pidtrimay.js"></script>
     <title>Вільні</title>
 </head>
 
@@ -30,10 +31,10 @@
         <div class="main-frame">
             <div class="upper">
                 <div class="btn-wrapper">
-                    <button>Підтримати армію</button>
-                    <button>Підтримати фонд</button>
+                    <button onclick="shift_left">Підтримати армію</button>
+                    <button onclick="shift_right">Підтримати фонд</button>
                 </div>
-                <img src="../img/Polygon 1.svg" alt="" class="triangle">
+                <img src="../img/Polygon 1.svg" alt=""  id="triangle">
                 <p>Твоя допомога - сила "Вільних": зараз</p>
             </div>
             <div class="bottom">
@@ -44,18 +45,36 @@
                     <button>Patreon</button>
                 </div>
                 <div class="p-list">
-                    <p><span>Рахунок в “Приватбанку“​​ (IBAN)</span><br>
-                        UA583052990000026003036234572</p>
-                    <p><span>Рахунок в "Ощадбанку"​(IBAN)</span><br>
-                        UA073226690000026004303905964</p>
-                    <p><span>ЄДРПОУ</span><br>
-                        39696398</p>
-                    <p><span>Отримувач</span><br>
-                        Благодійний фонд «Вільні»</p>
-                    <p><span>Призначення платежу</span><br>
-                        Безповортний благодійний внесок</p>
-                    <p><span>МФО Банку</span><br>
-                        322669</p>
+                    <div class="p-item">
+                        <p><span>Рахунок в “Приватбанку“​​ (IBAN)</span></p>
+                        <p id="p0">UA583052990000026003036234572</p>
+                        <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p0">
+                    </div>
+                    <div class="p-item">
+                        <p><span>ЄДРПОУ</span></p>
+                        <p id="p1">39696398</p>
+                        <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p1">
+                    </div>
+                    <div class="p-item">
+                        <p><span>Рахунок в "Ощадбанку"​(IBAN)</span></p>
+                        <p id="p2">UA073226690000026004303905964</p>
+                        <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p2">
+                    </div>
+                    <div class="p-item">
+                        <p><span>Отримувач</span></p>
+                        <p id="p3">Благодійний фонд «Вільні»</p>
+                        <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p3">
+                    </div>
+                    <div class="p-item">
+                        <p><span>Призначення платежу</span></p>
+                        <p id="p4">Безповортний благодійний внесок</p>
+                        <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p4">
+                    </div>
+                    <div class="p-item">
+                        <p><span>МФО Банку</span></p>
+                        <p id="p5">322669</p>
+                        <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p5">
+                    </div>
                 </div>
             </div>
         </div>

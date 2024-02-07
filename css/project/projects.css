@@ -8,7 +8,7 @@ body {
 }
 
 section {
-    padding: 0 0 100px;
+    padding: 0 0;
 }
 .transparent-btn {
     border: 1px white solid;
@@ -21,9 +21,9 @@ section {
 }
 
 .projects .title {
-    background: linear-gradient(#000000ae, #000000ae), url(../../img/projects/bg-proj.png)  center, no-repeat ;
+    background: url(../../img/projects/bg-proj.png)  center, no-repeat ;
     background-size: cover;
-    padding: 60px 60px;
+    padding: 8rem 60px;
     h1 {
         font-family: var(--font-f-h);
         color: var(--text-color);
@@ -40,7 +40,7 @@ section {
     }
 }
 .card-wrapper {
-    padding: 60px;
+    padding: 8rem 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;

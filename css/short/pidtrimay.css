@@ -54,7 +54,6 @@ p {
 }
 .pidtrimay .upper button { 
     width: 50%;
-    flex: 1 0 0;
 }
 
 .pidtrimay .upper img { 
@@ -62,6 +61,9 @@ p {
     width: 36px;
     right: -92%;
     position: relative;
+}
+.triangle {
+    right: 2% !important;
 }
 /* 
 .pidtrimay .upper button:first-of-type:click .upper img{
@@ -87,7 +89,7 @@ p {
     border-radius: 32px;
 }
 .pidtrimay .bottom .btn-wrapper button {
-    width: 414px;
+    width: 33.3%;
 }
 .pidtrimay .bottom > p {
     margin-bottom: 24px;
@@ -101,6 +103,45 @@ p {
 .pidtrimay .p-list {
     padding: 32px;
     display: grid;
-    gap:24px;
+    grid-template-columns: 1fr 1fr;
+    column-gap:15rem;
+    row-gap: 3rem;
     color: #fff;
+    .p-item {
+        display: grid;
+        grid-template-columns: auto 22px;
+        gap: 0.5rem;
+        p {
+            grid-column: 1;
+        }
+        img {
+            grid-row: 2;
+            grid-column: 2;
+            cursor: pointer;
+        }
+    }
+}
+
+/* media */
+@media (max-width:1070px) {
+    h1 {
+        font-size: calc(108px*0.7) !important;
+    }
+    p, .pidtrimay button {
+        font-size: calc(22px*0.8) !important;
+    }
+    .p-list{
+        column-gap: 5rem !important;
+    }
+}
+@media (max-width:805px) {
+    h1 {
+        font-size: calc(108px*0.7) !important;
+    }
+    p, .pidtrimay button {
+        font-size: calc(22px*0.8) !important;
+    }
+    .p-list{
+        column-gap: 2rem !important;
+    }
 }

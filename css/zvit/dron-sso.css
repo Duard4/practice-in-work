@@ -1,0 +1,36 @@
+@import url(common.css);
+
+section {
+    row-gap: 4rem;
+    align-items: end;
+}
+.top {
+    margin: auto;
+}
+section .img-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-row: 2/4;
+}
+.text-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h2:first-of-type {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+
+    }
+    h2:last-of-type {
+        margin-top: 1rem;
+        text-align: end;
+    }
+    
+}
+section a {
+    grid-column: 2;
+    grid-row: 3;
+}
