@@ -32,7 +32,7 @@
                 ДО КОМАНДИ</h1>
             <img src="../img/Vector 96.svg" alt="">
         </div>
-        <form action="" method="post" enctype="multipart/form-data" style="width: 100rem;">
+        <form action="" method="post" enctype="multipart/form-data">
             <div class="input-grid">
                 <label for="name">Ім'я<span>*</span></label>
                 <label for="surname">Прізвище </label>
@@ -43,7 +43,7 @@
                 <input type="email" name="email" id="email" value="Reserved@brightweb" autocomplete=true required />
                 <input type="text" name="number" id="number" value="+380" autocomplete=true required />
                 <p>Бажана посада</p>
-                <label for="age">Ваш вік</label>
+                <label for="age">Дата народження</label>
                 <div class="custom-select" name="position" id="position" style="width:200px;">
                     <select>
                         <option value="0">Вакантні місця:</option>
@@ -61,19 +61,12 @@
                         <option value="12">Volvo</option>
                     </select>
                 </div>
-                <input type="number" name="age" id="age" value="18" min="18" max="99" required />
+                <input type="date" name="date" id="date" required />
                 <label for="com">Додайте коментар<span>*</span></label>
                 <textarea name="com" id="com">Розкажи, що ти вмієш та чим можеш стати корисним у команді :)</textarea>
-                <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} файлів обрано"
-                    multiple />
-                <label for="file" onclick="clear()">
-                    <img src="../img/join-add.png" alt="skripka" id="f-i-1">
-                    <p>прикріпити файл</p>
-                    <img src="../img/join-can.png" alt="can" id="f-i-2">
-                </label>
+                
             </div>
-
-            <button>ДОЄДНАТИСЯ</button>
+            <input type="submit" value="ДОЄДНАТИСЯ">
 
         </form>
     </section>

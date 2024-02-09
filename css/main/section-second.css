@@ -3,18 +3,24 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
     padding: 80px 60px;
+
     @media (max-width: 1300px) {
         grid-template-columns: 1fr 1fr 1fr;
         width: fit-content;
         margin: 0 auto;
+
         .card {
             max-width: 22rem !important;
         }
     }
+
     @media (max-width: 945px) {
         grid-template-columns: 1fr 1fr;
     }
-    
+    @media (max-width: 405px) {
+        grid-template-columns: 1fr !important;
+    }
+
 }
 
 .second .card {
@@ -27,6 +33,48 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (max-width: 600px) {
+        height: 10rem !important;
+        padding: 18px !important;
+        img {
+            width: 40%;
+        }
+        h2 {
+            font-size: calc(64px*0.8) !important;
+        }
+        h2:not(:first-of-type) {
+            font-size: calc(32px*0.8) !important;
+        }
+        p {
+            font-size: 16px !important;
+        }
+    }
+    @media (max-width: 450px) {
+        height: 10rem !important;
+        padding: 18px !important;
+        img {
+            width: 40%;
+        }
+        h2 {
+            font-size: calc(64px*0.8*0.8) !important;
+        }
+        h2:not(:first-of-type) {
+            font-size: calc(32px*0.8*0.7) !important;
+        }
+        p {
+            font-size: 14px !important;
+        }
+        .line {
+            height: 1px !important;
+        }
+    }
+    @media (max-width: 405px) {
+        margin: 0 auto !important;
+        width: 12rem !important;
+        p {
+            font-size: 16px !important;
+        }
+    }
 }
 
 .second .card:last-child {
@@ -36,16 +84,34 @@
     align-items: center;
     display: inline-flex;
     flex-direction: column;
+
+    @media (max-width: 600px) {
+        padding: 18px !important;
+
+        p {
+            font-size: 20px !important;
+        }
+    }
+    @media (max-width: 450px) {
+        padding: 18px !important;
+
+        p {
+            font-size: 18px !important;
+        }
+    }
 }
+
 .upper-row {
     display: flex;
     justify-content: space-between;
 }
+
 .second .line {
     background-color: #262626;
     height: 2px;
     width: 12px;
 }
+
 .second .card:last-child img {
     width: 34px;
     height: 44px;
@@ -64,6 +130,7 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+
     p {
         width: 100%;
     }
@@ -86,8 +153,9 @@
 
 .second .card .upper-row p {
     font-size: 22px;
-    
+
 }
+
 .second .card p {
     font-size: 18px;
     font-family: var(--font-f);

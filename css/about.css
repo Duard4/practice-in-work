@@ -1,6 +1,4 @@
-.about .video-wrapper {
-    
-}
+
 .about video{
     max-width: 48%;
     height: 100%;
@@ -22,12 +20,49 @@
             margin: 0 auto 2rem;
             p, h1 {
                 text-align: center;
+                width: 100% !important;
+            }
+            h1 {
+                font-size: calc(64px*0.8);
+            }
+
+            p:first-of-type {
+                font-size: calc(24px*0.8);
+            }
+            p {
+                font-size: calc(18px*0.9);
             }
         }
         video {
-            max-width: 70% !important;
+            max-width: 80% !important;
             padding: 0 !important;
         }
+    }
+    @media (max-width:500px) {
+        flex-wrap: wrap;
+        .wrap {
+            h1 {
+                font-size: calc(64px*0.8*0.8);
+                line-height: normal;
+            }
+
+            p:first-of-type {
+                font-size: calc(24px*0.8*0.8);
+                line-height: normal;
+            }
+            p {
+                font-size: calc(18px*0.9*0.8);
+                line-height: normal;
+
+            }
+        }
+        video {
+            max-width: 95% !important;
+            padding: 0 !important;
+        }
+
+    }
+    @media (max-width:500px) {
     }
 }
 .about h1 {

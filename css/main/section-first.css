@@ -1,22 +1,122 @@
 .first {
     display: flex;
     justify-content: space-between;
+
     @media (max-width: 1180px) {
         flex-wrap: wrap;
         justify-content: center;
+
         .text-wrapper {
             margin-top: 5rem;
             justify-items: center;
-            width: 80% !important;
+
             h1 {
                 width: 100% !important;
                 text-align: center;
+                font-size: calc(108px*0.6);
             }
+
             p {
                 text-align: center;
+                font-size: calc(18px*0.9);
+                width: 70% !important;
             }
+
             img {
-                margin: 5rem 0 2rem;
+                margin: 3rem 0 2rem !important;
+                width: 4rem !important;
+            }
+        }
+
+        .zbir-card {
+            h2 {
+                font-size: calc(112px*0.6);
+
+            }
+
+            p {
+                width: auto !important;
+                font-size: calc(24px*0.8) !important;
+            }
+
+            button {
+                font-size: calc(20px*0.8);
+                padding: calc(18px*0.8) calc(32px*0.8) !important;
+            }
+        }
+    }
+
+    @media (max-width: 501px) {
+        .text-wrapper {
+            margin-top: 3rem !important;
+            h1 {
+                font-size: calc(108px*0.6*0.8) !important;
+                line-height: normal !important;
+            }
+            p {
+                font-size: calc(18px*0.8*0.8) !important;
+                width: auto !important;
+            }
+
+            img {
+                margin: 2rem 0 1.6rem !important;
+                width: 3rem !important;
+            }
+        }
+
+        .zbir-card {
+            h2 {
+                font-size: calc(112px*0.6*0.8) !important;
+                margin: 20px 0 !important;
+            }
+
+            p {
+                width: auto !important;
+                font-size: calc(24px*0.8*0.8) !important;
+            }
+
+            button {
+                font-size: calc(20px*0.8*0.8) !important;
+                padding: calc(18px*0.8*0.6) calc(32px*0.8*0.6) !important;
+
+            }
+        }
+    }
+    @media (max-width: 330px) {
+        .text-wrapper {
+            margin-top: 1rem !important;
+            h1 {
+                font-size: calc(108px*0.6*0.8);
+                line-height: normal !important;
+            }
+
+            p {
+                text-align: center;
+                font-size: calc(18px*0.8*0.8);
+                width: auto !important;
+            }
+
+            img {
+                margin: 2rem 0 1.6rem;
+                width: 3rem !important;
+            }
+        }
+
+        .zbir-card {
+            h2 {
+                font-size: calc(112px*0.6*0.8*0.8)!important;
+                margin: 20px 0 !important;
+            }
+
+            p {
+                width: auto !important;
+                font-size: calc(24px*0.8*0.8*0.8)!important;
+            }
+
+            button {
+                font-size: calc(20px*0.8*0.8*0.8) !important;
+                padding: calc(18px*0.8*0.6*0.8) calc(32px*0.8*0.6*0.8) !important;
+
             }
         }
     }
@@ -62,8 +162,8 @@
 
 .zbir-card img {
     border-radius: 12px;
-    width: 610px;
-    height: 275px;
+    width: 100%;
+    height: 95%;
     margin: 0 auto 32px;
 }
 
@@ -71,6 +171,7 @@
     font-size: 24px;
     line-height: 30px;
 }
+
 .zbir-card h2 {
     font-family: var(--font-f);
     font-size: 112px;
@@ -79,6 +180,7 @@
     margin: 48px 0;
     color: var(--text-color);
 }
+
 .zbir-card button {
     font-family: var(--font-f);
     padding: 18px 32px;
@@ -88,6 +190,7 @@
     border-radius: 12px;
     width: 100%;
 }
+
 .zbir-card a {
     width: 48%;
 }

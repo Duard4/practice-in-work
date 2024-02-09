@@ -12,7 +12,5 @@
             доставлена тим, кому вона необхідна першочергово.
         </p>
     </div>
-    <div class="video-wrapper">
-        <video src="../img/video.mp4" type="video/mp4" controls muted autoplay></video>
-    </div>
+    <video src="../img/video.mp4" type="video/mp4" controls muted autoplay></video>
 </section>

@@ -36,7 +36,7 @@ p {
     border-radius: 32px;
     background: #19191C;
 }
-.pidtrimay button {
+.pidtrimay button, .pidtrimay a {
     font-family: var(--font-f);
     font-size: 22px;
     font-weight: 700;
@@ -73,13 +73,13 @@ p {
     background-color: #111113;
     color: var(--yellow);
 }
-.pidtrimay .btn-wrapper button:first-of-type {
+.pidtrimay .btn-wrapper a:first-of-type, .pidtrimay .btn-wrapper button:first-of-type {
     border-radius: 24px 0px 0px 24px;
 }
 .pidtrimay .btn-wrapper {
     display: flex;
 }
-.pidtrimay .btn-wrapper button:last-of-type {
+.pidtrimay .btn-wrapper a:last-of-type, .pidtrimay .btn-wrapper button:last-of-type {
     border-radius:  0px 24px 24px 0px;
 }
 .pidtrimay .upper p {
@@ -88,7 +88,7 @@ p {
     background-color: var(--yellow);
     border-radius: 32px;
 }
-.pidtrimay .bottom .btn-wrapper button {
+.pidtrimay .bottom .btn-wrapper a {
     width: 33.3%;
 }
 .pidtrimay .bottom > p {

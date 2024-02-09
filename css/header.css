@@ -2,41 +2,126 @@ header {
     padding: 24px 60px;
     display: flex;
     justify-content: space-between;
+    @media (max-width:700px) {
+        img {
+            width: 24px !important;
+            height: calc(55px*0.8) !important;
+        }
+
+        a {
+            font-size: 16px !important;
+        }
+        .left {
+            gap: 30px !important;
+        }
+        button {
+            padding: 8px 8px !important;
+        }
+    }
+    @media (max-width:501px) {
+        img {
+            width: calc(24px*0.8) !important;
+            height: calc(55px*0.8*0.8) !important;
+        }
+
+        a {
+            font-size:calc(16px*0.8)  !important;
+        }
+
+        .left {
+            gap: 15px !important;
+        }
+        button {
+            padding: calc(8px*0.8) !important;
+        }
+    }
+    @media (max-width:430px) {
+        img {
+            width: calc(24px*0.8*0.8) !important;
+            height: calc(55px*0.8*0.8*0.8) !important;
+        }
+        .left {
+            gap: 10px !important;
+        }
+        a {
+            font-size:calc(16px*0.8*0.8)  !important;
+        }
+        button {
+            padding: calc(8px*0.8*0.8) !important;
+        }
+    }
+    
+    @media (max-width:330px) {
+        img {
+            width: calc(24px*0.8*0.8*0.8) !important;
+            height: calc(55px*0.8*0.8*0.8*0.8) !important;
+        }
+        .left {
+            gap: 5px !important;
+        }
+        a {
+            font-size:calc(16px*0.8*0.8*0.8)  !important;
+        }
+        button {
+            padding: calc(8px*0.8*0.8*0.8) !important;
+        }
+    }
 }
+
 header img {
     width: 30px;
     height: 55px;
 }
+
 header a {
     font-size: 18px;
-	font-family: var(--font-f);
+    font-family: var(--font-f);
     color: var(--text-color);
 }
-header .left, header .right {
+
+header .left,
+header .right {
     display: flex;
     align-items: center;
 }
+
 header .left {
     gap: 60px;
+
     @media (max-width: 945px) {
         gap: 2rem;
     }
 }
+
 header .right {
     gap: 50px;
+
     @media (max-width: 945px) {
-        gap: 1.7rem;
+        gap: 20px;
     }
 }
+
+header .right a:first-of-type {
+    display: none;
+}
+
 nav {
     display: flex;
     gap: 60px;
+
     @media (max-width: 945px) {
-        gap: 2rem;
+        gap: 30px !important;
+    }
+    @media (max-width: 600px) {
+        gap: 15px !important;
+    }
+    @media (max-width: 400px) {
+        gap: 5px !important;
     }
 }
+
 header button {
-	font-family: var(--font-f);
+    font-family: var(--font-f);
     font-weight: 500;
     color: var(--black);
     padding: 16px 32px;

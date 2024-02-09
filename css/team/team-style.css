@@ -5,16 +5,22 @@
 @import url(../about.css);
 @import url(team.css);
 @import url(zmi.css);
-
+@import url(../media.css);
 
 body {
     background: linear-gradient(66deg, rgba(11, 10, 16, 0.88) -6.21%, rgba(0, 0, 0, 0.00) 64.92%), linear-gradient(0deg, #141416 0%, #141416 100%), #0E0E10;
 }
 section:not(:first-of-type) {
     padding: 80px 60px;
+    @media (max-width:600px) {
+        padding: 40px 30px !important;
+    }
 }
 section:first-of-type {
     padding: 0px 60px;
+    @media (max-width:600px) {
+        padding: 0 30px 40px  !important;
+    }
 }
 .transparent-btn {
     border: 1px white solid;

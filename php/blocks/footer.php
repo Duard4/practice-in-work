@@ -1,8 +1,8 @@
-<footer>
+<footer id="footer">
     <div class="left">
         <img src="../img/розробка-02 5.png" alt="logo">
         <p>Ми функціонуємо, допоки ви підтримуєте нас фінансово!</p>
-        <a href="pidtrimay.html">
+        <a href="pidtrimay.php">
             <button class="yellow-btn">ПІДТРИМАТИ</button>
         </a>
     </div>
@@ -10,10 +10,10 @@
         <div class="about-us">
             <p>ПРО НАС</p>
             <ul>
-                <li><a href="team.html#team">Команда</a></li>
-                <li><a href="">Звітність</a></li>
-                <li><a href="">Контакти</a></li>
-                <li><a href="team.html#zmi">Ми у ЗМІ</a></li>
+                <li><a href="team.php#team">Команда</a></li>
+                <li><a href="zvit.php">Звітність</a></li>
+                <li><a href="#footer">Контакти</a></li>
+                <li><a href="team.php#zmi">Ми у ЗМІ</a></li>
             </ul>
         </div>
         <div class="contacts">
