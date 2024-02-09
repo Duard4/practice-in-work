@@ -1,5 +1,5 @@
 <?php
-$path_to_css = "../css/short/pidtrimay.css";
+$path_to_css = "../css/short/pidtrimay-2.css";
 $path_to_js = "<script src=\"../js/pidtrimay.js\"></script>";
 require "blocks/header.php";
 ?>
@@ -9,8 +9,8 @@ require "blocks/header.php";
     <div class="main-frame">
         <div class="upper">
             <div class="btn-wrapper">
-                <a href="pidtrimay-2.php">Підтримати армію</a>
-                <a href="#!">Підтримати фонд</a>
+                <a href="#!">Підтримати армію</a>
+                <a href="pidtrimay.php">Підтримати фонд</a>
             </div>
             <img src="../img/Polygon 1.svg" alt="" id="triangle">
             <p>Твоя допомога - сила "Вільних": зараз</p>
@@ -18,9 +18,7 @@ require "blocks/header.php";
         <div class="bottom">
             <p>СПОСІБ ПЛАТІЖУ</p>
             <div class="btn-wrapper">
-                <a href="https://send.monobank.ua/jar/3pnbEJirEX">Monobank</a>
-                <a href="https://tr.ee/ppGmRuQDGV">PayPal</a>
-                <a href="https://www.patreon.com/Vilni/membership">Patreon</a>
+                <a href="https://send.monobank.ua/jar/9hhKzgoyFE?fbclid=PAAabKxP3lXtBjUjIMyCnlIFPx6ECoRz7OgRKloJ9uGToOwTOAcaxYU2cYfdg">Monobank</a>
             </div>
             <div class="p-list">
                 <div class="p-item">
@@ -57,6 +55,7 @@ require "blocks/header.php";
         </div>
     </div>
 </section>
+
 <?php
 require "blocks/footer.php";
 ?>

@@ -1,20 +1,170 @@
-
 @import url(common.css);
 
 section {
     row-gap: 2rem;
     align-items: start;
+
+    @media (max-width:1080px) {
+        gap: 2rem !important;
+
+        h1 {
+            font-size: calc(108px*0.7) !important;
+        }
+
+        p {
+            font-size: calc(18px*0.8) !important;
+        }
+
+        a {
+            height: 6rem !important;
+            width: 6rem !important;
+        }
+
+        h2 {
+            font-size: calc(56px*0.7) !important;
+        }
+
+        h3 {
+            font-size: calc(24px*0.8) !important;
+        }
+
+        .bottom {
+            padding-top: 80px !important;
+        }
+    }
+
+    @media (max-width:800px) {
+        grid-template-columns: 100% !important;
+
+        * {
+            grid-column: 1 !important;
+        }
+
+        .column {
+            justify-content: space-around !important;
+            padding: 0 0 2rem !important;
+            width: 80% !important;
+        }
+
+        >img {
+            width: 80% !important;
+            margin: auto !important;
+        }
+
+        h1 {
+            br {
+                display: none !important;
+            }
+        }
+
+        h1,
+        h3,
+        p {
+            width: 100% !important;
+            text-align: center !important;
+            position: relative !important;
+        }
+        h3 {
+            margin: 0 !important;
+        }
+        p {
+            margin: 1rem 0 !important;
+        }
+
+        h2 {
+            font-size: calc(56px*0.7*0.6) !important;
+        }
+
+        .intro {
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0 !important;
+        }
+
+        .bottom {
+            padding: 30px 0 0 !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        row-gap: 1rem !important;
+
+        .text-wrapper {
+            gap: 1rem !important;
+        }
+
+        .column {
+            padding: 0 !important;
+        }
+
+        h1 {
+            font-size: calc(108px*0.7*0.8) !important;
+        }
+
+        h2 {
+            font-size: calc(56px*0.7*0.6*0.8) !important;
+        }
+
+        h3 {
+            font-size: calc(24px*0.8*0.8) !important;
+        }
+
+        .bottom {
+            padding: 0 !important;
+        }
+
+        a {
+            height: 3.5rem !important;
+            width: 3.5rem !important;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .img-wrapper {
+            gap: 0.2rem !important;
+        }
+        .intro {
+            br {
+                display: none !important;
+            }
+            padding: 0 !important;
+        }
+        h1 {
+            font-size: calc(108px*0.7*0.8*0.8) !important;
+        }
+
+        h2 {
+            font-size: calc(56px*0.7*0.6*0.6*0.8) !important;
+        }
+
+        h3 {
+            font-size: calc(24px*0.8*0.8*0.8) !important;
+        }
+
+        p {
+            font-size: calc(18px*0.8*0.8) !important;
+            margin: 0.5rem !important;
+        }
+
+        a {
+            height: 2.5rem !important;
+            width: 2.5rem !important;
+        }
+    }
 }
 
-.text-wrapper, .text-wrapper-2 {
+.text-wrapper,
+.text-wrapper-2 {
     >p {
         margin: 1.5rem 0;
     }
+
     p:first-of-type {
         font-size: 24px;
     }
-    
+
 }
+
 .column {
     flex-direction: column;
     margin: auto;
@@ -22,6 +172,7 @@ section {
     justify-content: space-between;
     gap: 2rem;
     padding: 0;
+
     img {
         width: 100%;
     }
@@ -32,6 +183,7 @@ section {
     padding: 3rem 0;
     font-weight: 700;
 }
+
 .text-wapper-2 {
     h3 {
         position: absolute;

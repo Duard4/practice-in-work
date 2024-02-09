@@ -19,6 +19,9 @@ section {
     div {
         width: 100%;
     }
+    @media (max-width:600px) {
+        padding: 8px 30px 30px !important;
+    }
 }
 
 .yellow-btn {

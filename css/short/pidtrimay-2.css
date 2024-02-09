@@ -3,7 +3,6 @@
 @import url(../header.css);
 @import url(../footer.css);
 @import url(media-for-p.css);
-
 body {
     background: linear-gradient(66deg, rgba(11, 10, 16, 0.88) -6.21%, rgba(0, 0, 0, 0.00) 64.92%), linear-gradient(0deg, #141416 0%, #141416 100%), #0E0E10;
 }
@@ -60,12 +59,10 @@ p {
 .pidtrimay .upper img { 
     margin-top: 12px;
     width: 36px;
-    right: -92%;
+    right: -4%;
     position: relative;
 }
-.triangle {
-    right: 2% !important;
-}
+
 /* 
 .pidtrimay .upper button:first-of-type:click .upper img{
     right: 0 ease;
@@ -90,7 +87,8 @@ p {
     border-radius: 32px;
 }
 .pidtrimay .bottom .btn-wrapper a {
-    width: 33.3%;
+    border-radius:  24px;
+    width: 100%;
 }
 .pidtrimay .bottom > p {
     margin-bottom: 24px;
@@ -122,4 +120,3 @@ p {
         }
     }
 }
-

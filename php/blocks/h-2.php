@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="left">
-            <a href="main.php"><img src="../../img/розробка-02 5.png" alt="logo" class="logo"></a>
+            <a href="../main.php"><img src="../../img/розробка-02 5.png" alt="logo" class="logo"></a>
             <nav>
                 <a href="../team.php">ПРО НАС</a>
                 <a href="../zvit.php">ЗВІТНІСТЬ</a>

@@ -1,0 +1,62 @@
+/* media */
+@media (max-width:1070px) {
+    h1 {
+        font-size: calc(108px*0.7) !important;
+    }
+    p, .pidtrimay a {
+        font-size: calc(22px*0.8) !important;
+    }
+    .pidtrimay a {
+        padding: calc(32px*0.8) !important;
+    }
+    .p-list{
+        column-gap: 5rem !important;
+    }
+}
+@media (max-width:805px) {
+    h1 {
+        font-size: calc(108px*0.7) !important;
+    }
+    p, .pidtrimay button {
+        font-size: calc(22px*0.8) !important;
+    }
+    .p-list{
+        column-gap: 2rem !important;
+    }
+}
+@media (max-width:750px) {
+    .upper img {
+        width: 24px !important;
+    }
+    .main-frame {
+        gap: 2rem !important;
+        margin: 1rem 0 4rem !important;
+    }
+    h1 {
+        font-size: calc(108px*0.7*0.8) !important;
+    }
+    p, .pidtrimay a {
+        font-size: calc(22px*0.8*0.8) !important;
+    }
+    .pidtrimay a {
+        padding: calc(32px*0.8*0.8) !important;
+    }
+    
+@media (max-width:675px) {
+    .upper img {
+        width: 24px !important;
+    }
+    .main-frame {
+        gap: 2rem !important;
+        margin: 1rem 0 4rem !important;
+    }
+    h1 {
+        font-size: calc(108px*0.7*0.8) !important;
+    }
+    p, .pidtrimay a {
+        font-size: calc(22px*0.8*0.8) !important;
+    }
+    .pidtrimay a {
+        padding: calc(32px*0.8*0.8) !important;
+    }
+}
