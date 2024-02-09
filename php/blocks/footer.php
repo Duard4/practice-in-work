@@ -23,7 +23,7 @@
                 <a href="https://www.instagram.com/vilni_volunteers"><img src="../img/main/image 209.png" alt=""></a>
                 <a href="https://www.facebook.com/vilnivolunteers"><img src="../img/main/image 210.png" alt=""></a>
                 <a href="https://x.com/VilniVolunteers"><img src="../img/main/image 208.png" alt=""></a>
-                <a href=""><img src="../img/main/image 211.png" alt=""></a>
+                <a href="https://www.reddit.com/r/vilni/"><img src="../img/main/image 211.png" alt=""></a>
             </div>
         </div>
     </div>

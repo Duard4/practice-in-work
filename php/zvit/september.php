@@ -1,7 +1,7 @@
 <?php
-$path_to_css = "../css/zvit/september.css";
-require "blocks/h-2.php";
-require "db.php";
+$path_to_css = "../../css/zvit/september.css";
+require "../blocks/h-2.php";
+require "../db.php";
 ?>
 
 <section>
@@ -52,14 +52,13 @@ require "db.php";
     <div class="bottom">
         <h2>Дякуємо за вашу довіру, <br>
             та кожен внесок у спасіння <br> життів і наближення перемоги!</h2>
-        <a href="october.html">
+        <a href="october.php">
             <img src="../../img/Vector 96.svg" alt="">
 
         </a>
     </div>
 </section>
-
 <?php
 $conn->close();
-require "blocks/footer.php";
+require "../blocks/f-2.php";
 ?>

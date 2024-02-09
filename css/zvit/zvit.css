@@ -9,6 +9,11 @@ body {
 
 section {
     padding: 60px;
+
+    @media (max-width:600px) {
+        padding: 30px !important;
+
+    }
 }
 
 .transparent-btn {
@@ -45,6 +50,7 @@ section {
             margin-left: 30%;
         }
     }
+
 }
 
 .card-wrapper {
@@ -153,6 +159,41 @@ table {
     width: 100%;
     margin-top: 5rem;
     border-spacing: 10px;
+
+    @media (max-width: 900px) {
+        margin-top: 2rem !important;
+        font-size: calc(18px*0.8) !important;
+        border-spacing: 5px !important;
+
+        th {
+            height: 20px !important;
+        }
+
+        td:first-of-type {
+            width: 25% !important;
+        }
+    }
+
+    @media (max-width: 630px) {
+        font-size: calc(18px*0.6) !important;
+        border-spacing: 3px !important;
+
+        th {
+            height: 20px !important;
+        }
+
+        td:first-of-type {
+            width: 25% !important;
+        }
+    }
+
+    @media (max-width: 430px) {
+        display: block !important;
+        max-width: -moz-fit-content !important;
+        max-width: fit-content !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+    }
 }
 
 th {
@@ -161,11 +202,156 @@ th {
     height: 40px;
 }
 
-/* tr:nth-child(even) {
-    background-color: rgba(208, 212, 150, 0.4);
+.zvit {
+    @media (max-width:1180px) {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .left {
+            display: flex;
+            min-width: 95% !important;
+            justify-content: space-between !important;
+
+            img {
+                width: 60%;
+                margin-left: 0 !important;
+            }
+
+            h1 {
+                font-size: calc(108px*0.8) !important;
+            }
+        }
+
+        >img {
+            margin-top: 5% !important;
+            width: 90% !important;
+        }
+
+        .card-wrapper {
+            grid-template-columns: 1fr 1fr !important;
+            padding: 4.8rem 0 6rem !important;
+
+            img {
+                grid-column: 1/3 !important;
+            }
+
+            a {
+                margin: 3.5rem 0 0 !important;
+            }
+        }
+    }
+
+    @media (max-width:800px) {
+
+        .card-wrapper {
+            gap: 1rem !important;
+            padding: 2.4rem 0 3rem !important;
+
+            .h-wrapper p,
+            .h-wrapper h1 {
+                font-size: calc(18px*0.8) !important;
+            }
+
+            a {
+                font-size: calc(18px*0.6) !important;
+            }
+
+            p {
+                font-size: calc(16px*0.8) !important;
+            }
+
+            a {
+                margin: 0.5rem 0 0 !important;
+                padding: calc(18px*0.8) calc(32px*0.8) !important;
+                width: 90% !important;
+            }
+
+            .card__info {
+                padding: 0 1rem 1rem !important;
+            }
+
+            .card img {
+                height: 30% !important;
+            }
+        }
+
+    }
+
+    @media (max-width:600px) {
+
+        .card-wrapper {
+            gap: 0.5rem !important;
+
+            .h-wrapper p,
+            .h-wrapper h1 {
+                font-size: calc(18px*0.8*0.8) !important;
+            }
+
+            a {
+                font-size: calc(18px*0.6*0.8) !important;
+            }
+
+            p {
+                font-size: calc(16px*0.8*0.8) !important;
+            }
+
+            a {
+                margin: 0.5rem 0 0 !important;
+                padding: 8px 18px !important;
+
+            }
+
+            .card__info {
+                padding: 0 1rem 1rem !important;
+            }
+
+            .card img {
+                height: 30%;
+            }
+        }
+    }
+
+    @media (max-width:400px) {
+        .left {
+            flex-direction: column !important;
+            align-items: center !important;
+
+            h1 {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        .card-wrapper {
+            gap: 0.5rem !important;
+
+            .h-wrapper p,
+            .h-wrapper h1 {
+                font-size: calc(18px*0.8*0.8*0.8) !important;
+            }
+
+            p {
+                font-size: calc(16px*0.8*0.8*0.8) !important;
+            }
+
+            a {
+                margin: 0.3rem 0 0 !important;
+                padding: 2px 8px !important;
+                font-size: calc(18px*0.6*0.8*0.8) !important;
+            }
+
+            .card__info {
+                padding: 0 0.5rem 0.8rem !important;
+            }
+        }
+    }
 }
 
-th:nth-child(even),
-td:nth-child(even) {
-    background-color: rgba(208, 212, 150, 0.4);
-} */
+.transactions {
+    @media (max-width:800px) {
+
+        h1 {
+            font-size: calc(24px*0.8) !important;
+            margin-top: -4rem !important;
+        }
+    }
+}

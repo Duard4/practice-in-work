@@ -73,7 +73,9 @@ footer {
             }
         }
     }
-
+    @media (max-width:600px) {
+        padding: 40px 30px !important;
+    }
     @media (max-width:500px) {
         gap: 1rem !important;
         .left img {

@@ -74,12 +74,12 @@ require "../db.php";
         <h2><span>Дякуємо всім,</span> хто долучився <br>
             до збору коштом чи поширенням, <br>
             ви зробив ці два виїзди можливими!</h2>
-        <a href="november.html">
+        <a href="november.php">
             <img src="../../img/Vector 96.svg" alt="">
         </a>
     </div>
 </section>
 <?php
 $conn->close();
-require "blocks/footer.php";
+require "../blocks/f-2.php";
 ?>

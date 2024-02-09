@@ -9,6 +9,10 @@ body {
 
 section:first-of-type {
     padding: 60px 60px;
+
+    @media (max-width:600px) {
+        padding: 30px !important;
+    }
 }
 
 .transparent-btn {
@@ -38,6 +42,12 @@ p {
     font-family: var(--font-f-h);
     font-size: 108px;
     color: var(--yellow);
+    width: 25rem;
+}
+
+.join .left {
+    max-width: 20%;
+
 }
 
 .join .left img {
@@ -48,7 +58,8 @@ form {
     padding: 36px;
     background-color: #19191C;
     border-radius: 32px;
-    width: 100rem;
+    width: 50rem;
+
     p {
         font-weight: 700;
     }
@@ -56,57 +67,9 @@ form {
 
 form .input-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     row-gap: 32px;
     column-gap: 20px;
-
-}
-
-input[type="file"] {
-    opacity: 0;
-    z-index: -1;
-    width: 0.1px !important;
-    height: 0.1px;
-    overflow: hidden;
-    padding: 0 !important;
-    grid-column: 2/3;
-}
-
-form label[for="file"] {
-    background-color: rgb(52, 52, 52);
-    color: #6B6B6B;
-    font-family: var(--font-f);
-    max-width: 60%;
-    padding: 0.8rem 0;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    grid-row: 9;
-
-    p {
-        font-size: 16px;
-        margin: auto;
-    }
-
-    img:last-of-type {
-        display: none;
-    }
-
-    img {
-        margin: auto;
-        height: 1.5rem;
-    }
-}
-
-form label[for="file"]:hover {
-    color: var(--text-color);
-}
-
-.inputfile:focus+label {
-    outline: 1px dotted #000;
-    outline: -webkit-focus-ring-color auto 5px;
 }
 
 label {
@@ -125,7 +88,7 @@ label {
     font-family: var(--font-f);
     color: #6B6B6B;
     background-color: #fff;
-    width: 100%;
+    width: 22rem;
     padding: 18px 32px;
     border-radius: 4px;
     border: 0.60px #D5D5D5 solid
@@ -160,7 +123,6 @@ form>input[type="submit"] {
 }
 
 .custom-select {
-    min-width: 350px;
     position: relative;
 }
 
@@ -168,7 +130,7 @@ select {
     font-family: var(--font-f);
     appearance: none;
     -webkit-appearance: none;
-    width: 105%;
+    width: 22.2rem;
     font-size: 18px;
     padding: 18px 32px;
     background-color: #fff;
@@ -199,4 +161,346 @@ select {
     border-right: var(--size) solid transparent;
     border-top: var(--size) solid black;
     top: 55%;
+}
+
+.insert {
+    h1 {
+        font-family: var(--font-f-h);
+        font-size: 108px;
+        color: var(--yellow);
+        text-align: center;
+    }
+
+    margin: 5rem 0;
+}
+
+.join {
+    @media (max-width:1320px) {
+        gap: 8rem !important;
+
+        .left {
+            display: flex;
+            min-width: 100% !important;
+            margin: 0 auto;
+            justify-content: space-between;
+
+            img {
+                margin-right: 10% !important;
+            }
+        }
+
+        flex-wrap: wrap;
+
+        form {
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width:940px) {
+        form {
+            .input-grid {
+                column-gap: 10px !important;
+            }
+
+            input {
+                width: 18rem !important;
+            }
+
+            select {
+                width: 18.2rem !important;
+
+            }
+        }
+    }
+
+    @media (max-width:865px) {
+        gap: 4rem !important;
+
+        .left {
+            h1 {
+                font-size: calc(118px*0.6);
+                width: 180px !important;
+            }
+
+            img {
+                margin-right: 10% !important;
+
+            }
+        }
+    }
+
+    @media (max-width:800px) {
+        form {
+            .input-grid {
+                column-gap: 10px !important;
+            }
+
+            label,
+            p {
+                font-size: calc(22px*0.8) !important;
+            }
+
+            input {
+                width: 15rem !important;
+                font-size: calc(18px*0.8) !important;
+
+            }
+
+            select {
+                width: 15.2rem !important;
+                font-size: calc(18px*0.8) !important;
+            }
+
+            textarea {
+                font-size: calc(16px*0.8) !important;
+
+            }
+        }
+    }
+
+    @media (max-width:660px) {
+        form {
+            padding: 26px !important;
+
+            .input-grid {
+                row-gap: 15px !important;
+            }
+
+            label,
+            p {
+                font-size: calc(22px*0.8*0.8) !important;
+            }
+
+            input {
+                width: 13rem !important;
+                font-size: calc(18px*0.8*0.8) !important;
+
+            }
+
+            select {
+                width: 13.2rem !important;
+                font-size: calc(18px*0.8*0.8) !important;
+            }
+
+            textarea {
+                font-size: calc(16px*0.8*0.8) !important;
+            }
+
+            input[type="submit"] {
+                margin-top: 1rem !important;
+            }
+
+        }
+
+        gap: 2rem !important;
+
+        .left {
+            h1 {
+                font-size: calc(118px*0.6*0.8) !important;
+                width: 200px !important;
+            }
+
+            img {
+                width: 10% !important;
+                margin-right: 10% !important;
+                margin-top: 40% !important;
+            }
+        }
+
+    }
+
+    @media (max-width:560px) {
+        form {
+            .input-grid {
+                row-gap: 10px !important;
+            }
+
+            width: 90%;
+
+            label,
+            p {
+                font-size: calc(22px*0.8*0.8*0.8) !important;
+            }
+
+            input {
+                width: 10rem !important;
+                font-size: calc(18px*0.8*0.8*0.8) !important;
+                padding: 8px !important;
+
+            }
+
+            select {
+                width: 10.2rem !important;
+                font-size: calc(18px*0.8*0.8*0.8) !important;
+                padding: 8px !important;
+            }
+
+            textarea {
+                font-size: calc(16px*0.8*0.8*0.8) !important;
+                padding: 12px 22px !important;
+                height: 3.5rem !important;
+            }
+
+            .custom-select::before,
+            .custom-select::after {
+                size: 0.2rem !important;
+                right: 2.8rem !important;
+            }
+
+            .custom-select::before {
+                border-left: 3px solid transparent !important;
+                border-right: 3px solid transparent !important;
+                border-bottom: 3px solid black !important;
+                top: 35%;
+            }
+
+            .custom-select::after {
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-top: 3px solid black;
+                top: 50%;
+            }
+        }
+    }
+
+    @media (max-width:510px) {
+        form {
+            padding: 18px !important;
+
+            .input-grid {
+                gap: 5px !important;
+            }
+
+            width: 95% !important;
+
+            label,
+            p {
+                font-size: calc(22px*0.8*0.8*0.8*0.8) !important;
+            }
+
+            input {
+                width: 8rem !important;
+                font-size: calc(18px*0.8*0.8*0.8*0.8) !important;
+                padding: 8px !important;
+
+            }
+
+            select {
+                width: 8.2rem !important;
+                font-size: calc(18px*0.8*0.8*0.8*0.8) !important;
+                padding: 8px !important;
+            }
+
+            textarea {
+                font-size: calc(16px*0.8*0.8*0.8) !important;
+            }
+
+            .custom-select::before,
+            .custom-select::after {
+                right: 4.8rem !important;
+
+            }
+        }
+        
+        gap: 2rem !important;
+
+        .left {
+            h1 {
+                font-size: calc(118px*0.6*0.8*0.8) !important;
+                width: 200px !important;
+            }
+
+            img {
+                width: 15% !important;
+                margin-right: 10% !important;
+                margin-top: 40% !important;
+            }
+        }
+    }
+
+    @media (max-width:410px) {
+        form {
+            .input-grid {
+                gap: 5px !important;
+            }
+
+            width: 95%;
+
+            label,
+            p {
+                font-size: calc(22px*0.8*0.8*0.8*0.8) !important;
+            }
+
+            input {
+                width: 6rem !important;
+                font-size: calc(18px*0.8*0.8*0.8*0.8) !important;
+                padding: 8px !important;
+            }
+
+            select {
+                width: 6.2rem !important;
+                font-size: calc(18px*0.8*0.8*0.8*0.8) !important;
+                padding: 8px !important;
+            }
+
+            textarea {
+                font-size: calc(16px*0.8*0.8*0.8) !important;
+
+                height: 2rem !important;
+                padding: 8px 14px !important;
+            }
+
+            .custom-select::before,
+            .custom-select::after {
+                right: 6.8rem !important;
+
+            }
+
+            input[type="submit"] {
+                width: 50% !important;
+            }
+        }
+    }
+    @media (max-width:310px) {
+        form {
+            .input-grid {
+                gap: 5px !important;
+            }
+
+            label,
+            p {
+                font-size: calc(22px*0.8*0.8*0.8*0.8*0.8) !important;
+            }
+
+            input {
+                width: 4rem !important;
+                font-size: calc(18px*0.8*0.8*0.8*0.8*0.8) !important;
+                padding: 4px !important;
+            }
+
+            select {
+                width: 4.2rem !important;
+                font-size: calc(18px*0.8*0.8*0.8*0.8*0.8) !important;
+                padding: 4px !important;
+            }
+
+            textarea {
+                font-size: calc(16px*0.8*0.8*0.8*0.8) !important;
+
+                height: 2rem !important;
+                padding: 8px 14px !important;
+            }
+
+            .custom-select::before,
+            .custom-select::after {
+                right: 8.8rem !important;
+
+            }
+
+            input[type="submit"] {
+                width: 50% !important;
+            }
+        }
+    }
+
 }

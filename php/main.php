@@ -20,8 +20,8 @@ require "blocks/header.php";
         <p>Збір на бронековдри</p>
         <h2>290 000₴</h2>
         <div class="btn-wrapper">
-            <a href=""><button class="transparent-btn">ДЕТАЛЬНІШЕ</button></a>
-            <a href="pidtrimay.html"><button class="yellow-btn">ПІДТРИМАТИ</button>
+            <a href="project.php"><button class="transparent-btn">ДЕТАЛЬНІШЕ</button></a>
+            <a href="pidtrimay.php"><button class="yellow-btn">ПІДТРИМАТИ</button>
             </a>
         </div>
     </div>

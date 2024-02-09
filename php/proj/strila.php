@@ -1,7 +1,7 @@
 <?php
-$path_to_css = "../css/zvit/zvit.css";
-require "blocks/h-2.php";
-require "db.php";
+$path_to_css = "../../css/project/common.css";
+require "../blocks/h-2.php";
+require "../db.php";
 ?>
     <section>
         <div class="p-head">
@@ -30,12 +30,12 @@ require "db.php";
                 <h2>Загальний збір:</h2>
                 <h2 class="color">277 791 ₴</h2>
             </div>
-            <a href="trembita.html">
+            <a href="trembita.php">
                 <img src="../../img/Vector 96.svg" alt="">
             </a>
         </div>
     </section>
     <?php
 $conn->close();
-require "blocks/footer.php";
+require "../blocks/f-2.php";
 ?>

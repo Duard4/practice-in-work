@@ -3,6 +3,7 @@
 @import url(../header.css);
 @import url(../footer.css);
 
+
 body {
     background: linear-gradient(66deg, rgba(11, 10, 16, 0.88) -6.21%, rgba(0, 0, 0, 0.00) 64.92%), linear-gradient(0deg, #141416 0%, #141416 100%), #0E0E10;
 }
@@ -69,6 +70,8 @@ section {
     border-radius: 24px;
     background: #19191C;
     height: 534px;
+    max-width: 420px !important;
+
     h1 {
         color: var(--yellow);
         font-family: var(--font-f);
@@ -108,5 +111,166 @@ section {
     }
     .text-wrapper>p:first-of-type{
         font-weight: 700;
+    }
+}
+.title {
+    @media (max-width:800px) {
+        h1 {
+            font-size: calc(108px*0.8) !important;
+        }
+        p {
+            font-size: calc(18px*0.8) !important;
+            max-width: 50% !important;
+        }
+    }
+    
+    @media (max-width:600px) {
+        padding: 4rem 30px !important;
+        h1 {
+            font-size: calc(108px*0.8) !important;
+        }
+        p {
+            font-size: calc(18px*0.8) !important;
+            max-width: 50% !important;
+        }
+    }
+    
+    @media (max-width:400px) {
+        padding: 3rem 30px !important;
+        h1 {
+            text-align: center !important;
+            font-size: calc(108px*0.6*0.8) !important;
+        }
+        p {
+            text-align: center !important;
+            margin: 1rem auto !important;
+            font-size: calc(18px*0.8*0.8) !important;
+            max-width: 80% !important;
+        }
+    }
+}
+.projects {
+    @media (max-width:1180px) {
+        .card-wrapper {
+            column-gap: 20px !important;
+        }
+    }
+    @media (max-width:1180px) {
+        .card-wrapper {
+            grid-template-columns: 1fr 1fr !important;
+            padding: 4.8rem 0 6rem !important;
+            width: 95% !important;
+            margin: 0 auto !important;
+            img {
+                grid-column: 1/3 !important;
+            }
+
+            a {
+                margin: 3.5rem 0 0 !important;
+            }
+            .card {
+                height: 100% !important;
+            }
+        }
+    }
+
+    @media (max-width:800px) {
+
+        .card-wrapper {
+            gap: 1rem !important;
+            padding: 2.4rem 0 3rem !important;
+            
+            .h-wrapper p,
+            .h-wrapper h1 {
+                font-size: calc(18px*0.8) !important;
+            }
+
+            a {
+                font-size: calc(18px*0.6) !important;
+            }
+
+            p {
+                font-size: calc(16px*0.8) !important;
+            }
+
+            a {
+                margin: 0.5rem 0 0 !important;
+                padding: calc(18px*0.8) calc(32px*0.8) !important;
+                width: 90% !important;
+            }
+
+            .card__info {
+                padding: 0 1rem 1rem !important;
+            }
+
+            .card img {
+                height: 30% !important;
+            }
+        }
+
+    }
+
+    @media (max-width:600px) {
+
+        .card-wrapper {
+            gap: 0.5rem !important;
+
+            .h-wrapper p,
+            .h-wrapper h1 {
+                font-size: calc(18px*0.8*0.8) !important;
+            }
+
+            a {
+                font-size: calc(18px*0.6*0.8) !important;
+            }
+
+            p {
+                font-size: calc(16px*0.8*0.8) !important;
+            }
+
+            a {
+                margin: 0.5rem 0 0 !important;
+                padding: 8px 18px !important;
+
+            }
+
+            .card__info {
+                padding: 0 1rem 1rem !important;
+            }
+
+            .card img {
+                height: 30%;
+            }
+        }
+    }
+
+    @media (max-width:400px) {
+        .card-wrapper {
+            grid-template-columns: 1fr !important;
+            gap: 0.5rem !important;
+            align-items: center !important;
+            .h-wrapper p,
+            .h-wrapper h1 {
+                font-size: calc(18px*0.8*0.8*0.8) !important;
+            }
+
+            p {
+                font-size: calc(16px*0.8*0.8*0.8) !important;
+            }
+
+            a {
+                margin: 0.3rem 0 0 !important;
+                padding: 2px 8px !important;
+                font-size: calc(18px*0.6*0.8*0.8) !important;
+            }
+
+            .card__info {
+                padding: 0 0.5rem 0.8rem !important;
+            }
+            .card {
+            margin: 0 auto;
+            max-width: 220px !important;
+        }
+        }
     }
 }

@@ -1,8 +1,9 @@
 <?php
-$path_to_css = "../css/zvit/november.css";
-require "blocks/h-2.php";
-require "db.php";
+$path_to_css = "../../css/zvit/dron-sso.css";
+require "../blocks/h-2.php";
+require "../db.php";
 ?>
+
 
 <section>
     <div class="top">
@@ -73,12 +74,12 @@ require "db.php";
     <h2><span class="color">Дякуємо всім,</span> хто долучився <br>
         до збору коштом чи поширенням, <br>
         ви зробив ці два виїзди можливими!</h2>
-    <a href="../zvit.html">
+    <a href="../zvit.php">
         <img src="../../img/Vector 96.svg" alt="">
     </a>
     </div>
 </section>
 <?php
 $conn->close();
-require "blocks/footer.php";
+require "../blocks/f-2.php";
 ?>
