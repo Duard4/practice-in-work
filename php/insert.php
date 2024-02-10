@@ -8,7 +8,6 @@ require "db.php";
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $position_id = $_POST['position'] + 21;
-    $age = $_POST['age'];
     $com = $_POST['com'];
     $date = $_POST['date'];
     if ($position_id == 21) {
