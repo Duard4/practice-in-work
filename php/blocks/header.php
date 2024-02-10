@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=<?php echo $path_to_css?>>
-    <?php if  ($path_to_js) echo $path_to_js?>
+    <?php if  (isset($path_to_js)) echo $path_to_js?>
     <title>Вільні</title>
 </head>
 <body>
