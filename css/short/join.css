@@ -144,17 +144,6 @@ select {
     cursor: pointer;
 }
 
-.insert {
-    h1 {
-        font-family: var(--font-f-h);
-        font-size: 108px;
-        color: var(--yellow);
-        text-align: center;
-    }
-
-    margin: 5rem 0;
-}
-
 .join {
     @media (max-width:1320px) {
         gap: 8rem !important;
