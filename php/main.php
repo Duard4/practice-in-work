@@ -53,10 +53,13 @@ require "blocks/header.php";
         <div class="line"></div>
         <p>а також інше спорядження для військових</p>
     </div>
+    <a href="zvit.php">
     <div class="card">
         <img src="../img/main/svg/Vector 96.svg" alt="arrow">
         <p>переглянути звітність</p>
     </div>
+    </a>
+    
 </section>
 <?php
 require "blocks/about.php";
@@ -93,7 +96,7 @@ require "blocks/about.php";
         необхідним. Ми робимо усе, аби воїни відчували міцний тил.</p>
     <div class="container">
         <h2>Підтримай Вільних - Підтримай Україну</h2>
-        <a href="pidtrimay.html"><button class="yellow-btn">ПІДТРИМАТИ</button></a>
+        <a href="pidtrimay.php"><button class="yellow-btn">ПІДТРИМАТИ</button></a>
     </div>
 </section>
 

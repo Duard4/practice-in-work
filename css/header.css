@@ -87,15 +87,12 @@ header {
             width: calc(24px*0.8*0.8*0.8*0.6) !important;
             height: calc(55px*0.8*0.8*0.8*0.8*0.6) !important;
         }
-
         .left {
             gap: 2px !important;
         }
-
         a {
             font-size: calc(16px*0.8*0.8*0.8*0.8) !important;
         }
-
         button {
             padding: calc(8px*0.8*0.8*0.8*0.6) !important;
         }

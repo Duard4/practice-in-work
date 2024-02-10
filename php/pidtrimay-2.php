@@ -13,7 +13,7 @@ require "blocks/header.php";
                 <a href="pidtrimay.php">Підтримати фонд</a>
             </div>
             <img src="../img/Polygon 1.svg" alt="" id="triangle">
-            <p>Твоя допомога - сила "Вільних": зараз</p>
+            <p>"Ваш внесок - наближує Україну до перемоги"</p>
         </div>
         <div class="bottom">
             <p>СПОСІБ ПЛАТІЖУ</p>
