@@ -6,17 +6,6 @@
 body {
     background: linear-gradient(66deg, rgba(11, 10, 16, 0.88) -6.21%, rgba(0, 0, 0, 0.00) 64.92%), linear-gradient(0deg, #141416 0%, #141416 100%), #0E0E10;
 }
-html,
-body {
-    height: 100%;
-}
-
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
 
 section:first-of-type {
     padding: 60px 60px;
@@ -104,9 +93,11 @@ label {
     border-radius: 4px;
     border: 0.60px #D5D5D5 solid
 }
+
 input [type="date"] {
     height: 75%;
 }
+
 form textarea {
     padding: 20px 32px;
     height: 5.5rem;
@@ -160,6 +151,7 @@ select {
         color: var(--yellow);
         text-align: center;
     }
+
     margin: 5rem 0;
 }
 
@@ -305,9 +297,11 @@ select {
             }
 
             width: 90%;
+
             input[type="date"] {
                 height: 90% !important;
             }
+
             label,
             p {
                 font-size: calc(22px*0.8*0.8*0.8) !important;
@@ -366,7 +360,7 @@ select {
                 font-size: calc(16px*0.8*0.8*0.8) !important;
             }
         }
-        
+
         gap: 2rem !important;
 
         .left {
@@ -419,7 +413,9 @@ select {
                 width: 50% !important;
             }
         }
+        
     }
+
     @media (max-width:310px) {
         form {
             .input-grid {
@@ -449,10 +445,26 @@ select {
                 height: 2rem !important;
                 padding: 8px 14px !important;
             }
+
             input[type="submit"] {
                 width: 50% !important;
             }
         }
+
     }
 
+}
+@media (max-width:350px) {
+    
+    html,
+    body {
+        height: 100%;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
 }
