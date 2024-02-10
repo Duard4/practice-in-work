@@ -83,7 +83,7 @@ section {
             font-size: calc(24px*0.8*0.8) !important;
         }
         
-        .bottom {
+        > div.bottom {
             padding: 0 !important;
         }
         

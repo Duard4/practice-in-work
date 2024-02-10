@@ -1,5 +1,5 @@
 <?php
-$path_to_css = "../../css/zvit/dron-sso.css";
+$path_to_css = "../../css/zvit/november.css";
 require "../blocks/h-2.php";
 require "../db.php";
 ?>
