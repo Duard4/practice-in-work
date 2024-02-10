@@ -1,0 +1,6 @@
+html/
+php/
+docker-compose.yml
+Dockerfile
+.dockerignore
+
