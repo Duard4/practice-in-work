@@ -28,6 +28,8 @@
         p {
             margin: 30px auto !important;
             font-size: calc(22px*0.8*0.8) !important;
+            line-height: normal !important;
+
         }
         h2 {
             font-size: calc(46px*0.8*0.8) !important;

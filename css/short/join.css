@@ -359,9 +359,10 @@ select {
             }
 
             img {
-                width: 15% !important;
+
+                width: 10% !important;
                 margin-right: 10% !important;
-                margin-top: 40% !important;
+                margin-top: 15% !important;
             }
         }
     }

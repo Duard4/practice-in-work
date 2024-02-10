@@ -50,6 +50,8 @@
 
         p {
             font-size: 16px !important;
+            line-height: normal !important;
+
         }
 
         .card-wrapper {
