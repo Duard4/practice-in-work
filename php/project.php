@@ -12,67 +12,35 @@ require "db.php";
     </div>
     <div class="card-wrapper">
         <?php
-        $type = ["ІВЕНТ", "ЗБІР"];
-        $sql = "SELECT project_id, title, date_of_start, status
-        FROM vilni.Projects;";
+        $a = ['strila', 'maviki', 'trembita'];
+        $sql = "SELECT title, date_of_start, status, `type`, pr_descr FROM vilni.Projects limit 3;
+        ";
+        $i = 0;
         $result = $conn->query($sql);
-
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "<div class=\"card\">
+                <img class=\"card__image\" src=\"../img/projects/i" . $i + 1 . ".png\" alt=\"Image\">
+                <div class=\"card__info\">
+                    <div class=\"text-wrapper\">
+                        <div class=\"h-wrapper\">
+                            <h1>" . $row['type'] . "</h1>
+                            <p>" . $row['date_of_start'] . "</p>
+                        </div>
+                        <p>" . $row['title'] . "</p>
+                        <p>" . $row['pr_descr'] . "
+                        </p>
+                    </div>
+    
+                    <a href=\"proj/" . $a[$i] . ".php\">
+                        ДЕТАЛЬНІШЕ
+                    </a>
+                </div>
+            </div>";
+                $i++;
+            }
+        }
         ?>
-        <div class="card">
-            <img class="card__image" src="../img/projects/i1.png" alt="Image">
-            <div class="card__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>ІВЕНТ </h1>
-                        <p>14.10.2022</p>
-                    </div>
-                    <p>Стріла</p>
-                    <p>Збір на військові рації
-                        <br><br>
-                        Команда «Вільних» продовжує забезпечувати новітніх українських супергероїв зв’язком....
-                    </p>
-                </div>
-
-                <a href="proj/strila.php">
-                    ДЕТАЛЬНІШЕ
-                </a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card__image" src="../img/projects/i2.png" alt="Image">
-            <div class="card__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>ІВЕНТ </h1>
-                        <p>18.11.2022</p>
-                    </div>
-                    <p>Трембіта</p>
-                    <p>Благодійний івент-концерт від військових волонетрів "Вільні"...
-                    </p>
-                </div>
-                <a href="proj/trembita.php">
-                    ДЕТАЛЬНІШЕ
-                </a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card__image" src="../img/projects/i3.png" alt="Image">
-            <div class="card__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>ЗБІР </h1>
-                        <p>01.02.2023</p>
-                    </div>
-                    <p>Мільйон на мавіки</p>
-                    <p>Ми оголошуємо новий збір на підтримку 30-ї окремої механізованої бригади імені Князя
-                        Острозького та 46-ї окремої аеромобільної бригади</p>
-                </div>
-
-                <a href="proj/maviki.php">
-                    ДЕТАЛЬНІШЕ
-                </a>
-            </div>
-        </div>
     </div>
 </section>
 <?php

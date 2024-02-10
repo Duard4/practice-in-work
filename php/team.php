@@ -1,40 +1,42 @@
 <?php
 $path_to_css = "../css/team/team-style.css";
 require "blocks/header.php";
+require "db.php";
 ?>
 
 <section class="team" id="team">
     <div class="card-wrapper">
         <?php
-        $names = ["Кравчук Поліна", "Лебедівна Олеся", "Гліб Фіщенко", "Виповська Віта", "Лічик Дмитро", 
-        "Лебединська Василіса", "Семенюк Богдан", "Міщенко Марія", "Вінс Валерій", "Саніна Іванна"];
-        $roles = [
-            "SMM-менеджер", "Project-менеджер", "Засновник, директор фонду", "Спіч-райтер, копірайтер, контент-менеджер",
-            "Комунікаційний менеджер", "Операційний директор фонду", "Менеджер з документообліку",
-            "Офіс-менеджер, психолог організації", "Аналітик", "IR-менеджер"
-        ];
+        $sql = "SELECT first_name, last_name, `rank`
+        FROM vilni.Members 
+        JOIN vilni.Candidates ON vilni.Members.candidate_id  = vilni.Candidates.candidate_id 
+        JOIN vilni.Positions ON vilni.Members.position_id   = vilni.Positions.position_id 
+        Limit 10";
+        $result = $conn->query($sql);
         $i = 0;
-        for ($n = 0; $n < 4; $n++) {
-            echo "<div class=\"column\">";
-            for ($j = 0; ; $j++) {
-                if ($n % 3 == 0) {
-                    if ($j == 2) break;
-                } else {if ($j == 3) break;}
-                $name = $names[$i];
-                $role = $roles[$i];
-                $num = $i+1;
-                $i++;
-                echo "<div class=\"card\">
+        if ($result->num_rows > 0) {
+            for ($n = 0; $n < 4; $n++) {
+                echo "<div class=\"column\">";
+                for ($j = 0;; $j++) {
+                    if ($n % 3 == 0) {
+                        if ($j == 2) break;
+                    } else {
+                        if ($j == 3) break;
+                    }
+                    $row = $result->fetch_assoc();
+                    $i++;
+                    echo "<div class=\"card\">
                         <div class=\"shade\"></div>
-                        <div class=\"card-img\" style=\"background: url(../img/team/member\ " . $num . ".png), lightgray 50% / cover no-repeat;\">
+                        <div class=\"card-img\" style=\"background: url(../img/team/member\ " . $i . ".png), lightgray 50% / cover no-repeat;\">
                             <div class=\"text-wrapper\">
-                                <h1>" . $name . "</h1>
-                                <p>" . $role . "</p>
-                            </div>
+                            <h1>" . $row['first_name'] . " " . $row['last_name'] . "</h1>
+                            <p>" . $row['rank'] . "</p>
+                        </div>
                         </div>
                     </div>";
-            } 
-            echo "</div>";
+                }
+                echo "</div>";
+            }
         }
         ?>
     </div>
@@ -63,90 +65,31 @@ require "blocks/about.php";
 
 <section class="zmi" id="zmi">
     <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
-        <div class="slider__item">
-            <img class="slider__image" src="../img/team/Rectangle 5140 (1).png" alt="Image">
-            <div class="slider__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>НОВИНИ</h1>
-                        <p>22.02.2023</p>
+        <?php
+        $sql = "SELECT highlight, published_date, `description`, link, img, title FROM defaultdb.News;";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "<div class=\"slider__item\">
+                <img class=\"slider__image\" src=\"../img/team/". $row['img'] ."\" alt=\"Image\">
+                <div class=\"slider__info\">
+                    <div class=\"text-wrapper\">
+                        <div class=\"h-wrapper\">
+                            <h1>". $row['highlight']. "</h1>
+                            <p>". $row['published_date']. "</p>
+                        </div>
+                        <p>". $row['title']. "</p>
+                        <p> ". $row['description']."</p>
                     </div>
-                    <p>Ми у Kyiv Independent </p>
-                    <p>As a specialist, Fishchenko is convinced that the end is in sight, and that the democratic
-                        strengths of pre-war Ukraine will flourish once again</p>
+                    <a href=" . $row['link'] .">ДЕТАЛЬНІШЕ</a>
                 </div>
-
-                <a href="https://kyivindependent.com/plans-dreams-shattered-the-2022-that-could-have-been-for-ukraine/">ДЕТАЛЬНІШЕ</a>
-            </div>
-        </div>
-        <div class="slider__item">
-            <img class="slider__image" src="../img/team/Rectangle 5141 (1).png" alt="Image">
-            <div class="slider__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>НОВИНИ</h1>
-                        <p>03.01.2023</p>
-                    </div>
-                    <p>Допомога для ЗСУ та цивільного населення: понад 10 тонн їжі та ліків</p>
-                    <p>Волонтерський громадський рух Вільні надав 600 сімейних харчових наборів загальною вагою 4
-                        200
-                        кг.</p>
-                </div>
-
-                <a href="https://fakty.com.ua/ua/ukraine/suspilstvo/20220901-10-tonn-yizhi-ta-likiv-blagodijni-fondy-peredaly-dopomogu-dlya-zsu-ta-czyvilnogo-naselennya/">ДЕТАЛЬНІШЕ</a>
-            </div>
-        </div>
-        <div class="slider__item">
-            <img class="slider__image" src="../img/team/Rectangle 5141 (2).png" alt="Image">
-            <div class="slider__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>НОВИНИ, МІСІЇ</h1>
-                    </div>
-                    <p>Допомога ЗСУ та населенню
-                        на Сході України</p>
-                    <p>10 тонн харчових наборів та ліків відправилися до Слов'янська, Краматорська, Дружківки.</p>
-                </div>
-                <a href="https://apostrophe.ua/ua/news/society/2022-09-01/pomosch-vsu-i-naseleniyu-na-vostoke-ukrainy-fond-buduschee-dlya-ukrainy-rasskazal-o-svoih-proektah/278199?amp">
-                    ДЕТАЛЬНІШЕ
-                </a>
-            </div>
-        </div>
-        <div class="slider__item">
-            <img class="slider__image" src="../img/team/Rectangle 5140 (2).png" alt="Image">
-            <div class="slider__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>НОВИНИ, МІСІЇ</h1>
-                        <p>03.01.2023</p>
-                    </div>
-                    <p>Новий рік завдяки волонтерам</p>
-                    <p>Спільна гуманітарна місія на Херсонщину</p>
-                </div>
-                <a href="https://www.youtube.com/watch?v=nC7HHbhY2JM">
-                    ДЕТАЛЬНІШЕ
-                </a>
-            </div>
-        </div>
-        <div class="slider__item">
-            <img class="slider__image" src="../img/team/Component 3.png" alt="Image">
-            <div class="slider__info">
-                <div class="text-wrapper">
-                    <div class="h-wrapper">
-                        <h1>НОВИНИ, МІСІЇ</h1>
-                        <p>03.01.2023</p>
-                    </div>
-                    <p>Вільні: інтерв'ю на грузинському телебаченні</p>
-                    <p>Волонтерський громадський рух Вільні: історія створення руху. </p>
-                </div>
-
-                <a href="https://fb.watch/hIqUqboo11/?mibextid=qC1gEa">
-                    ДЕТАЛЬНІШЕ
-                </a>
-            </div>
-        </div>
-
+            </div>";
+            }
+        }
+        ?>
+    </div>
 </section>
 <?php
+$conn->close();
 require "blocks/footer.php";
 ?>
