@@ -3,6 +3,18 @@ $path_to_css = "../../css/project/common.css";
 require "../blocks/h-2.php";
 require "../db.php";
 ?>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
 <section>
     <div class="p-head">
         <h1>ЗБІР</h1>
