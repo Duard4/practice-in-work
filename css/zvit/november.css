@@ -101,6 +101,7 @@ section {
             gap: 0.2rem !important;
         }
         h1 {
+            margin: 0 !important;
             font-size: calc(108px*0.7*0.8*0.8) !important;
         }
         h2 {
