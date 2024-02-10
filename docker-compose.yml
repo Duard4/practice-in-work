@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  app:
+    image: app
+    container_name: app
+
+  nginx:
+    image: web-server
+    ports:
+      - 80:80
+      - 443:443
+    container_name: web-server
+    volumes: 
+      - /var/log/nginx:/var/log/nginx
+
