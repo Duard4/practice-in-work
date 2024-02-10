@@ -93,7 +93,9 @@ label {
     border-radius: 4px;
     border: 0.60px #D5D5D5 solid
 }
-
+input [type="date"] {
+    height: 75%;
+}
 form textarea {
     padding: 20px 32px;
     height: 5.5rem;
@@ -140,29 +142,6 @@ select {
     cursor: pointer;
 }
 
-.custom-select::before,
-.custom-select::after {
-    --size: 0.3rem;
-    content: "";
-    position: absolute;
-    right: 1rem;
-    pointer-events: none;
-}
-
-.custom-select::before {
-    border-left: var(--size) solid transparent;
-    border-right: var(--size) solid transparent;
-    border-bottom: var(--size) solid black;
-    top: 40%;
-}
-
-.custom-select::after {
-    border-left: var(--size) solid transparent;
-    border-right: var(--size) solid transparent;
-    border-top: var(--size) solid black;
-    top: 55%;
-}
-
 .insert {
     h1 {
         font-family: var(--font-f-h);
@@ -170,7 +149,6 @@ select {
         color: var(--yellow);
         text-align: center;
     }
-
     margin: 5rem 0;
 }
 
@@ -316,7 +294,9 @@ select {
             }
 
             width: 90%;
-
+            input[type="date"] {
+                height: 90% !important;
+            }
             label,
             p {
                 font-size: calc(22px*0.8*0.8*0.8) !important;
@@ -339,26 +319,6 @@ select {
                 font-size: calc(16px*0.8*0.8*0.8) !important;
                 padding: 12px 22px !important;
                 height: 3.5rem !important;
-            }
-
-            .custom-select::before,
-            .custom-select::after {
-                size: 0.2rem !important;
-                right: 2.8rem !important;
-            }
-
-            .custom-select::before {
-                border-left: 3px solid transparent !important;
-                border-right: 3px solid transparent !important;
-                border-bottom: 3px solid black !important;
-                top: 35%;
-            }
-
-            .custom-select::after {
-                border-left: 3px solid transparent;
-                border-right: 3px solid transparent;
-                border-top: 3px solid black;
-                top: 50%;
             }
         }
     }
@@ -393,12 +353,6 @@ select {
 
             textarea {
                 font-size: calc(16px*0.8*0.8*0.8) !important;
-            }
-
-            .custom-select::before,
-            .custom-select::after {
-                right: 4.8rem !important;
-
             }
         }
         
@@ -450,12 +404,6 @@ select {
                 padding: 8px 14px !important;
             }
 
-            .custom-select::before,
-            .custom-select::after {
-                right: 6.8rem !important;
-
-            }
-
             input[type="submit"] {
                 width: 50% !important;
             }
@@ -490,13 +438,6 @@ select {
                 height: 2rem !important;
                 padding: 8px 14px !important;
             }
-
-            .custom-select::before,
-            .custom-select::after {
-                right: 8.8rem !important;
-
-            }
-
             input[type="submit"] {
                 width: 50% !important;
             }

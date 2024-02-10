@@ -1,6 +1,5 @@
 <?php
 $path_to_css = "../css/short/join.css";
-$path_to_js = "../js/join.js";
 require "blocks/header.php";
 require "db.php";
 ?>

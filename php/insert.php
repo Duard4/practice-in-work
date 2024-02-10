@@ -11,7 +11,6 @@ require "db.php";
     $age = $_POST['age'];
     $com = $_POST['com'];
     $date = $_POST['date'];
-    // echo $first_name . ', ' . $last_name . ', ' . $phone . ', ' . $email . ', ' . $date . ', ' . $com . ', ' . $position_id;
     if ($position_id == 21) {
         $sql_insert = "INSERT INTO vilni.Candidates
     (first_name, last_name, phone_number, email, date_of_birth, comment)
