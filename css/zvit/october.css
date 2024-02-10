@@ -58,10 +58,16 @@ section {
         }
 
         h1,
-        h3,
-        p {
+        h3{
             width: 100% !important;
             text-align: center !important;
+            position: relative !important;
+        }
+        p {
+            width: 100% !important;
+            margin: 0 !important;
+
+
             position: relative !important;
         }
         h3 {
@@ -143,7 +149,6 @@ section {
 
         p {
             font-size: calc(18px*0.8*0.8) !important;
-            margin: 0.5rem !important;
         }
 
         a {
