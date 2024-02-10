@@ -3,60 +3,158 @@
     h1 {
         font-size: calc(108px*0.7) !important;
     }
-    p, .pidtrimay a {
+
+    p,
+    .pidtrimay a {
         font-size: calc(22px*0.8) !important;
     }
+
     .pidtrimay a {
         padding: calc(32px*0.8) !important;
     }
-    .p-list{
+
+    .p-list {
         column-gap: 5rem !important;
     }
 }
+
 @media (max-width:805px) {
     h1 {
         font-size: calc(108px*0.7) !important;
     }
-    p, .pidtrimay button {
+
+    p,
+    .pidtrimay button {
         font-size: calc(22px*0.8) !important;
     }
-    .p-list{
+
+    .p-list {
         column-gap: 2rem !important;
     }
 }
+
 @media (max-width:750px) {
     .upper img {
         width: 24px !important;
     }
+
     .main-frame {
         gap: 2rem !important;
         margin: 1rem 0 4rem !important;
+        padding: 30px !important;
     }
+    .bottom > p {
+        margin-bottom: 16px !important}
     h1 {
         font-size: calc(108px*0.7*0.8) !important;
     }
-    p, .pidtrimay a {
+
+    p,
+    .pidtrimay a {
         font-size: calc(22px*0.8*0.8) !important;
+    }
+    .p-list {
+        row-gap: 1rem !important;
+        padding: 1rem !important;
     }
     .pidtrimay a {
         padding: calc(32px*0.8*0.8) !important;
     }
+
+    @media (max-width:675px) {
+        .upper img {
+            width: 18px !important;
+        }
+        .main-frame {
+            gap: 1rem !important;
+            margin: 1rem 0 0rem !important;
+            padding: 24px !important;
+        }
+        h1 {
+            font-size: calc(108px*0.7*0.8*0.8) !important;
+        }
+        p,
+        .pidtrimay a {
+            font-size: calc(22px*0.8*0.8*0.8) !important;
+        }
+
+        .pidtrimay a {
+            padding: calc(32px*0.8*0.8*0.6) !important;
+
+        }
+        .p-list img {
+            width: 14px !important;
+        }
+    }
+    @media (max-width:600px) {
+        section {
+            padding: 30px !important;
+        }
+    }
+    @media (max-width:500px) {
+        .upper img {
+            width: 14px !important;
+            margin-top: 2px !important;
+            right: -8% !important;
+        }
+        .upper p {
+            margin-top: -10px !important;
+            padding: 8px !important;
+        }
+        .main-frame {
+            gap: 1rem !important;
+            margin: 0.5rem 0 0rem !important;
+            padding: 18px !important;
+        }
+        h1 {
+            font-size: calc(108px*0.7*0.8*0.8*0.8) !important;
+        }
+        p,
+        .pidtrimay a {
+            font-size: calc(22px*0.8*0.8*0.8*0.8) !important;
+        }
+
+        .pidtrimay a {
+            padding: calc(32px*0.8*0.8*0.6*0.8) !important;
+            line-height: 18px !important;
+        }
+        .p-list {
+            column-gap: 0.7rem !important;
+        }
+        .p-list img {
+            width: 9px !important;
+        }
+    .bottom > p {
+        margin-bottom: 8px !important}
+    }
+    @media (max-width:400px) {
+        h1 {
+            font-size: calc(108px*0.7*0.8*0.8*0.8*0.8) !important;
+        }
+        p,
+        .pidtrimay a {
+            font-size: calc(22px*0.8*0.8*0.8*0.8*0.8) !important;
+        }
+        .pidtrimay a {
+            padding: 8px 0 !important;
+            line-height: normal !important;
+        }
+        .p-list {
+            grid-template-columns: 100% !important;
+            row-gap: 0.3rem !important;
+            padding: 8px 0 !important;
+        }
+        .p-list img {
+            width: 9px !important;
+        }
+    .bottom > p {
+        margin-bottom: 0 !important}
+    }
+    @media (max-width:275px) {
+
+        
+        .p-list img {
+            width: 8px !important;
+        }
     
-@media (max-width:675px) {
-    .upper img {
-        width: 24px !important;
-    }
-    .main-frame {
-        gap: 2rem !important;
-        margin: 1rem 0 4rem !important;
-    }
-    h1 {
-        font-size: calc(108px*0.7*0.8) !important;
-    }
-    p, .pidtrimay a {
-        font-size: calc(22px*0.8*0.8) !important;
-    }
-    .pidtrimay a {
-        padding: calc(32px*0.8*0.8) !important;
-    }
-}
+}}

@@ -201,7 +201,12 @@ th {
     border: 1px solid var(--text-color);
     height: 40px;
 }
-
+section:last-of-type {
+    padding: 30px;
+    @media (max-width:600px) {
+        padding: 15px !important;
+    }
+}
 .zvit {
     @media (max-width:1180px) {
         flex-direction: column !important;
@@ -307,6 +312,7 @@ th {
 
             .card img {
                 height: 30%;
+                border-radius: 6px !important;
             }
         }
     }
@@ -323,12 +329,7 @@ th {
 
         .card-wrapper {
             gap: 0.5rem !important;
-
-            .h-wrapper p,
-            .h-wrapper h1 {
-                font-size: calc(18px*0.8*0.8*0.8) !important;
-            }
-
+            grid-template-columns: 100% !important;
             p {
                 font-size: calc(16px*0.8*0.8*0.8) !important;
             }
@@ -336,14 +337,26 @@ th {
             a {
                 margin: 0.3rem 0 0 !important;
                 padding: 2px 8px !important;
-                font-size: calc(18px*0.6*0.8*0.8) !important;
             }
-
+            .card {
+                width: 13rem !important;
+                margin: 0 auto;
+            }
             .card__info {
                 padding: 0 0.5rem 0.8rem !important;
             }
+            * {
+                grid-column: 1 !important;
+            }
         }
     }
+    @media (max-width:265px) {
+        .card-wrapper .card {
+            width: 100% !important;
+            margin: 0 auto;
+        }
+    }
+    
 }
 
 .transactions {
