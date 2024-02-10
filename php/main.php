@@ -32,7 +32,7 @@ require "blocks/header.php";
     $values_p = ["тонн", "одиниць"];
     $values_p2 = ["гуманітарної допомоги", "медицини", "автомобілів", "дронів", "рацій", "РЕБи"];
     for ($i = 0; $i < 6; $i++) {
-        $img_i = $i;
+        $img_num = $i+1;
         $value = $values_h[$i];
         $p = $values_p2[$i];
         if ($i < 3) {
