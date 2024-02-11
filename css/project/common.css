@@ -160,9 +160,7 @@ section {
                 grid-column: 2 !important;
             }
         }
-    }
 
-    @media (max-width:500px) {
         .p-head {
             h1 {
                 font-size: 44px !important;
@@ -207,6 +205,11 @@ section {
                 width: 2.1rem !important;
                 height: 2.1rem !important;
             }
+        }
+    }
+    @media (max-width:300px) {
+        .p-head br {
+            display: none !important;
         }
     }
 }

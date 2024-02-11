@@ -86,7 +86,7 @@
         .text-wrapper {
             margin-top: 1rem !important;
             h1 {
-                font-size: calc(108px*0.6*0.8);
+                font-size: calc(108px*0.6*0.6) !important;
                 line-height: normal !important;
             }
 
@@ -103,6 +103,8 @@
         }
 
         .zbir-card {
+            padding: 8px !important;
+            margin: 0 auto !important;
             h2 {
                 font-size: calc(112px*0.6*0.8*0.8)!important;
                 margin: 20px 0 !important;

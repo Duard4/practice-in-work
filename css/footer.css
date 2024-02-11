@@ -73,11 +73,14 @@ footer {
             }
         }
     }
+
     @media (max-width:600px) {
         padding: 30px !important;
     }
+
     @media (max-width:500px) {
         gap: 1rem !important;
+
         .left img {
             width: 1.4rem !important;
         }
@@ -93,11 +96,13 @@ footer {
             a {
                 width: 1.3rem !important;
             }
+
             img {
                 width: 100% !important;
             }
         }
     }
+
     @media (max-width:330px) {
         gap: 0.4rem !important;
         padding: 15px 30px !important;
@@ -117,13 +122,16 @@ footer {
             a {
                 width: 1rem !important;
             }
+
             img {
                 width: 100% !important;
             }
         }
     }
+
     @media (max-width:280px) {
         gap: 0.2rem !important;
+
         .left img {
             width: 1rem !important;
         }
@@ -134,9 +142,11 @@ footer {
             font-size: calc(16px*0.8*0.8*0.8*0.8) !important;
             line-height: normal !important;
         }
+
         button {
             padding: 4px !important;
         }
+
         .contacts {
             a {
                 width: 0.7rem !important;

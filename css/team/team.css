@@ -177,6 +177,14 @@
             }
 
         }
+        .right p {
+            line-height: normal !important;
+            width: 100% !important;
+        }
+        h1 {
+            line-height: normal !important;
+
+        }
     }
 }
 

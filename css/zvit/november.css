@@ -51,9 +51,13 @@ section {
             width: 80% !important;
             margin: auto !important;
         }
-        h1, h3, p {
+        h1, h3{
             width: 100% !important;
             text-align: center !important;
+        }
+        p {
+            margin: 0 !important;
+            width: 100% !important;
         }
         p {
             margin: 1rem 0 !important;
@@ -83,7 +87,7 @@ section {
             font-size: calc(24px*0.8*0.8) !important;
         }
         
-        .bottom {
+        > div.bottom {
             padding: 0 !important;
         }
         
@@ -97,6 +101,7 @@ section {
             gap: 0.2rem !important;
         }
         h1 {
+            margin: 0 !important;
             font-size: calc(108px*0.7*0.8*0.8) !important;
         }
         h2 {
@@ -107,7 +112,6 @@ section {
         }
         p {
             font-size: calc(18px*0.8*0.8) !important;
-            margin: 0.5rem !important;
         }
         a {
             height: 2.5rem !important;
