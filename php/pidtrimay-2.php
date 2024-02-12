@@ -48,7 +48,7 @@ require "blocks/header.php";
                 </div>
                 <div class="p-item">
                     <p><span>МФО Банку</span></p>
-                    <p id="p5">8292011</p>
+                    <p id="p5">82**011</p>
                     <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p5">
                 </div>
             </div>
