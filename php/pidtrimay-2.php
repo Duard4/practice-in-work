@@ -18,22 +18,22 @@ require "blocks/header.php";
         <div class="bottom">
             <p>СПОСІБ ПЛАТІЖУ</p>
             <div class="btn-wrapper">
-                <a href="https://send.monobank.ua/jar/9hhKzgoyFE?fbclid=PAAabKxP3lXtBjUjIMyCnlIFPx6ECoRz7OgRKloJ9uGToOwTOAcaxYU2cYfdg">Monobank</a>
+                <a href="https://send.monobank.ua/jar/7iDX8hJBx6">Monobank</a>
             </div>
             <div class="p-list">
                 <div class="p-item">
                     <p><span>Рахунок в “Приватбанку“​​ (IBAN)</span></p>
-                    <p id="p0">UA583052990000026003036234572</p>
+                    <p id="p0">UA37148259*****4825*****1482590</p>
                     <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p0">
                 </div>
                 <div class="p-item">
                     <p><span>ЄДРПОУ</span></p>
-                    <p id="p1">39696398</p>
+                    <p id="p1">38**2**3</p>
                     <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p1">
                 </div>
                 <div class="p-item">
                     <p><span>Рахунок в "Ощадбанку"​(IBAN)</span></p>
-                    <p id="p2">UA073226690000026004303905964</p>
+                    <p id="p2">UA82516*****28165****982165374</p>
                     <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p2">
                 </div>
                 <div class="p-item">
@@ -48,7 +48,7 @@ require "blocks/header.php";
                 </div>
                 <div class="p-item">
                     <p><span>МФО Банку</span></p>
-                    <p id="p5">322669</p>
+                    <p id="p5">82**011</p>
                     <img src="../img/v-copy.svg" alt="" onclick="copy(this)" copy-id="p5">
                 </div>
             </div>

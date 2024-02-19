@@ -17,8 +17,8 @@ require "blocks/header.php";
     </div>
     <div class="zbir-card">
         <img src="../img/main/zbir.png" alt="zahist">
-        <p>Збір на бронековдри</p>
-        <h2>290 000₴</h2>
+        <p>Збір на турнікети для Азову</p>
+        <h2>180 000₴</h2>
         <div class="btn-wrapper">
             <a href="project.php"><button class="transparent-btn">ДЕТАЛЬНІШЕ</button></a>
             <a href="pidtrimay.php"><button class="yellow-btn">ПІДТРИМАТИ</button>
