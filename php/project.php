@@ -12,7 +12,7 @@ require "db.php";
     </div>
     <div class="card-wrapper">
         <?php
-        $a = ['strila', 'maviki', 'trembita'];
+        $a = ['strila', 'trembita', 'maviki'];
         $sql = "SELECT title, date_of_start, status, `type`, pr_descr FROM vilni.Projects limit 3;
         ";
         $i = 0;
