@@ -16,7 +16,7 @@ require "blocks/header.php";
         <img src="../img/main/svg/Vector 96.svg" alt="arrow">
     </div>
     <div class="zbir-card">
-        <img src="../img/main/zbir.png" alt="zahist">
+        <img src="../img/main/zbir1.png" alt="zahist">
         <p>Збір на турнікети для Азову</p>
         <h2>180 000₴</h2>
         <div class="btn-wrapper">
