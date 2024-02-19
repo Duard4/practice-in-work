@@ -18,7 +18,7 @@ require "blocks/header.php";
         <div class="bottom">
             <p>СПОСІБ ПЛАТІЖУ</p>
             <div class="btn-wrapper">
-                <a href="https://send.monobank.ua/jar/9hhKzgoyFE?fbclid=PAAabKxP3lXtBjUjIMyCnlIFPx6ECoRz7OgRKloJ9uGToOwTOAcaxYU2cYfdg">Monobank</a>
+                <a href="https://send.monobank.ua/jar/7iDX8hJBx6">Monobank</a>
             </div>
             <div class="p-list">
                 <div class="p-item">
